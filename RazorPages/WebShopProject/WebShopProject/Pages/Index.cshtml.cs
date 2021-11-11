@@ -13,6 +13,7 @@ namespace WebShopProject.Pages
     {
         public List<ProductModel> Products { get; private set; }
 
+        Hej karl
         public void OnGet()
         {
 
