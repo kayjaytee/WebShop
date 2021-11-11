@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace WebShopProject.Models
 {
-    public class TobaccoModel : ProductModel
+    public class Elixir : Product
     {
-
         public string ID { get; set; }
         public string Name { get; set; }
         public string Image { get; set; }
