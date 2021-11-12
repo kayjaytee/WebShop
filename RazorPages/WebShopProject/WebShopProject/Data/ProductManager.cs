@@ -127,29 +127,29 @@ namespace WebShopProject.Models
                     Description = "Upplever du ett försämrat synfält när du skall ta kvasten på natten? Vår nya potion nattöga, ger dig nightvison. ",
                     Cost = 650,
                     Ingredients = "Vargspindel öga, Vatten från dödahavet.",
-                    Warning = "OBS: en droppe för mycket av Nattöga, löper en storrisk för att tappa synen för alltid."
+                    Warning = "OBS: en droppe för mycket av Nattöga, löper en stor risk för att tappa synen för alltid."
                 },
 
                 new PotionModel()
                 {
                     ID = "p08",
-                    Name = "",
-                    Image = "image here",
-                    Description = "",
-                    Cost = 0,
-                    Ingredients = "",
-                    Warning = ""
+                    Name = "Jesus vatten potion",
+                    Image = "image here",      //återkommer med bild
+                    Description = "Detta elexir gör det omöjliga möjligt. Vi tog hjälp av jesus att framkalla detta. En potion som gör att du kan vandra över vatten.",
+                    Cost = 150,
+                    Ingredients = "Hårstrå från jesus, tånagel från Bigfoot. ",
+                    Warning = "Vid använding tänk på att alltid ha detta elexir i fickan, finns en stor risk att magin slutar verka och vi alla vet hur det skulle sluta ute på det öppna havet."
                 },
 
                 new PotionModel()
                 {
                     ID = "p09",
-                    Name = "",
-                    Image = "image here",
-                    Description = "",
-                    Cost = 0,
-                    Ingredients = "",
-                    Warning = ""
+                    Name = "Skäggavfall",
+                    Image = "image here",   //kommer med bild inom kort!
+                    Description = "Denna dryck gör din vardag som magiker enklare. Lider du av problemet skäggväxt? Två droppar av denna dryck på tungan och allt skägg åker av direkt.",
+                    Cost = 99,
+                    Ingredients = "Tunga från tiger, Dvärgsaliv, råttöra. ",
+                    Warning = "Risk för att tappa håret på andra ställen än i ansiktet. Studier visar även på att vissa har fått en infekterad pungkula. "
                 },
 
                 new PotionModel()
@@ -222,7 +222,7 @@ namespace WebShopProject.Models
             };
 
             //PROBLEM: Returnerar null, försöker lista ut en lösning
-     
+           //fyllt i produkterna i dem 2 första spalterna. Det som skall läggas till i dem är bilder. Detta kan jag behöva hjälp med Karl-johan <3
         }
 
         public List<ProductModel> FindAll()
