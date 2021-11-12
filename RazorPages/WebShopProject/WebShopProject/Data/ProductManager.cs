@@ -19,7 +19,7 @@ namespace WebShopProject.Models
 
         //Ska ni lägga till nya föremål så ändra i koden:
 
-        public ProductModel()
+        public List<ProductModel> MyFunction()
         {
             if (Products == null || !Products.Any())
             { 
@@ -224,7 +224,7 @@ namespace WebShopProject.Models
             };
          
             }
-            return Products;
+            return Products; 
 
             //PROBLEM: Returnerar null, försöker lista ut en lösning!!!!
             //fyllt i produkterna i dem 2 första spalterna. Det som skall läggas till i dem är bilder. Detta kan jag behöva hjälp med Karl-johan <3
@@ -237,7 +237,7 @@ namespace WebShopProject.Models
 
        public ProductModel FindID(string id)
         {
-            return Products.Where(p => p.ID == id).FirstOrDefault; //kopplat till ovanstående PROBLEM: Returnerar null
+            return Products.Where(product => product.ID == id).FirstOrDefault(); //kopplat till ovanstående PROBLEM: Returnerar null
         }
     }
 
