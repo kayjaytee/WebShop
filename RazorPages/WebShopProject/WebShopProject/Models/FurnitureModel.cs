@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace WebShopProject.Models
 {
-    public class Furniture : Product
+    public class FurnitureModel : ProductModel
     {
         public string ID { get; set; }
         public string Name { get; set; }
