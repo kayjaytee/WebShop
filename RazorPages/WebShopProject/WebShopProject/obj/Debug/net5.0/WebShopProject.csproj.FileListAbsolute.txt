@@ -42,3 +42,11 @@ C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopP
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.pdb
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.genruntimeconfig.cache
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.csproj.CopyComplete
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.csproj.AssemblyReference.cache
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.AssemblyInfoInputs.cache
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.AssemblyInfo.cs
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.csproj.CoreCompileInputs.cache
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.RazorAssemblyInfo.cache
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.RazorAssemblyInfo.cs

@@ -155,12 +155,12 @@ namespace WebShopProject.Models
                 new PotionModel()
                 {
                     ID = "p10",
-                    Name = "",
-                    Image = "image here",
-                    Description = "",
-                    Cost = 0,
-                    Ingredients = "",
-                    Warning = ""
+                    Name = "MegaMind",
+                    Image = "image here", // bild inom kort.
+                    Description = "MegaMind är ett elexir som höjer din IQ. I snitt ligger en männsikas IQ mellan 90-100. MegaMind ger dig en IQ på över 500. ",
+                    Cost = 10 000,
+                    Ingredients = "hjärncell från Albert Einstein, en skvätt amfetamin, uran-235  ",
+                    Warning = "Då uran-235 finns i MegaMind finns det risk för att hjärncellerna dör. "
                 },
                 #endregion Potion
                 #region Tobacco
