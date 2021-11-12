@@ -1,4 +1,5 @@
 ﻿using System;
+using WebShopProject.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,18 +9,20 @@ namespace WebShopProject.Models
     public class ProductManager
     {
 
-        private List<ProductModel> Products { get; set; }
+        private List<ProductModel> Products;
 
         //jag har lagt till productmodels med alla kategorier, behövs bara förtydligande av olika föremål och det går att lägga
         //till om man så önskar. Jag la de ny-genererade produkterna i #regioner bara för att förtydliga ordningen
         //Nedanför har jag försökt skapa metoder för att kunna söka på olika prylar, men behöver arbeta lite mer på det (och nu är jag trött)
 
-        //Metoderna ska kunna hänvisas till pages senare
+        //Metoderna ska kunna hänvisas till pages senare.
 
         //Ska ni lägga till nya föremål så ändra i koden:
 
         public ProductModel()
         {
+            if (Products == null || !Products.Any())
+            { 
             Products = new List<ProductModel>() //I detta kodstycke kan ni lägga till nya föremål
             {
                 #region Furniture
@@ -92,13 +95,12 @@ namespace WebShopProject.Models
                     Warning = "Kan explodera vid en för HÖG värme halt. Vi rekomenderar att inte göra några magiska trollkarlsövningar i närheten av denna produkt, då explosion risken är hög. "
                 },            
 
-
                 new FurnitureModel()
                 {
                     ID = "f05",
                     Name = "Magiskt kläddskåp",
                     Image = "image here",                     //Återkommer med bild av denna magiska produkt
-                    Description = "En revolutionerande produkt inom den magiska sektorn. Stig in i det stora skåpet, liten som stor och kliv ut med rena kläder från topp till tå. "
+                    Description = "En revolutionerande produkt inom den magiska sektorn. Stig in i det stora skåpet, liten som stor och kliv ut med rena kläder från topp till tå. ",
                                   
                     Cost = 7500,
                     Height = 10f,
@@ -158,7 +160,7 @@ namespace WebShopProject.Models
                     Name = "MegaMind",
                     Image = "image here", // bild inom kort.
                     Description = "MegaMind är ett elexir som höjer din IQ. I snitt ligger en männsikas IQ mellan 90-100. MegaMind ger dig en IQ på över 500. ",
-                    Cost = 10 000,
+                    Cost = 10000,
                     Ingredients = "hjärncell från Albert Einstein, en skvätt amfetamin, uran-235  ",
                     Warning = "Då uran-235 finns i MegaMind finns det risk för att hjärncellerna dör. "
                 },
@@ -167,10 +169,10 @@ namespace WebShopProject.Models
                 new TobaccoModel()
                 {
                     ID = "t11",
-                    Name = "",
+                    Name = "Lidemans blå",
                     Image = "image here",
-                    Description = "",
-                    Cost = 0,
+                    Description = "En stor exportsuccé utvecklad av dvärgarna i fiskebranchen - erbjuder en härlig smak av saltvatten, skelögd fulsträmming och vit fethaj.",
+                    Cost = 40,
                     Ingredients = "",
                     Warning = ""
                 },
@@ -220,9 +222,12 @@ namespace WebShopProject.Models
                 },
                 #endregion Tobacco
             };
+         
+            }
+            return Products;
 
-            //PROBLEM: Returnerar null, försöker lista ut en lösning
-           //fyllt i produkterna i dem 2 första spalterna. Det som skall läggas till i dem är bilder. Detta kan jag behöva hjälp med Karl-johan <3
+            //PROBLEM: Returnerar null, försöker lista ut en lösning!!!!
+            //fyllt i produkterna i dem 2 första spalterna. Det som skall läggas till i dem är bilder. Detta kan jag behöva hjälp med Karl-johan <3
         }
 
         public List<ProductModel> FindAll()

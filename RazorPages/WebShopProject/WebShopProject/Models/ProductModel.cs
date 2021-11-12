@@ -15,7 +15,7 @@ namespace WebShopProject.Models
         public float Height { get; set; }
         public float Width { get; set; }
         public float Weight { get; set; }
-        public string[] Ingredients { get; set; }
+        public string Ingredients { get; set; }
         public string Warning { get; set; }
 
     }
