@@ -222,7 +222,8 @@ namespace WebShopProject.Models
             };
 
             //PROBLEM: Returnerar null, försöker lista ut en lösning
-           //fyllt i produkterna i dem 2 första spalterna. Det som skall läggas till i dem är bilder. Detta kan jag behöva hjälp med Karl-johan <3
+           // Furniture samt Potion klart. Tobacco återstår.
+          
         }
 
         public List<ProductModel> FindAll()
