@@ -81,29 +81,30 @@ namespace WebShopProject.Models
                 new FurnitureModel()
                 {
                     ID = "f05",
-                    Name = "BESTÄM NI",
-                    Image = "image here",
-                    Description = "BESTÄM NI"
-                                  + "Plusset är är endast för att skapa utrymme när du skriver, så man slipper eviga rader som går utanför skärmen, typ som nu.",
-                    Cost = 0,
-                    Height = 0f,
-                    Width = 0f,
-                    Weight = 0,
-                    Warning = "Hitta på nåt kul"
-                },
-                
+                    Name = "Magiska Elementet",
+                    Image = "image here",                                                                            // återkommer med bild av denna magiska produkt.
+                    Description = "Det magiska elementet som får hela ditt hem att framstå som en solsemester."
+                                  + "En revolutionerande magisk produkt som förändrar värmen för hela ditt hem.",              
+                    Cost = 3500,
+                    Height = 6f,
+                    Width = 7f,
+                    Weight = 10,
+                    Warning = "Kan explodera vid en för HÖG värme halt. Vi rekomenderar att inte göra några magiska trollkarlsövningar i närheten av denna produkt, då explosion risken är hög. "
+                },            
+
+
                 new FurnitureModel()
                 {
                     ID = "f05",
-                    Name = "BESTÄM NI",
-                    Image = "image here",
-                    Description = "BESTÄM NI"
+                    Name = "Magiskt kläddskåp",
+                    Image = "image here",                     //Återkommer med bild av denna magiska produkt
+                    Description = "En revolutionerande produkt inom den magiska sektorn. Stig in i det stora skåpet, liten som stor och kliv ut med rena kläder från topp till tå. "
                                   + "Plusset är är endast för att skapa utrymme när du skriver, så man slipper eviga rader som går utanför skärmen, typ som nu.",
-                    Cost = 0,
-                    Height = 0f,
-                    Width = 0f,
-                    Weight = 0,
-                    Warning = "Hitta på nåt kul"
+                    Cost = 7500,
+                    Height = 10f,
+                    Width = 5f,
+                    Weight = 45,
+                    Warning = "Titta nogrant att du inte stiger in i detta magiska skåpet med hundskit, risken för en hemsk doft på kläderna ökar risken markant."
                 },
                 #endregion Furniture
                 #region Potion
