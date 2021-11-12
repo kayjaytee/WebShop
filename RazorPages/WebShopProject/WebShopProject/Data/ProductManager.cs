@@ -99,12 +99,12 @@ namespace WebShopProject.Models
                     Name = "Magiskt kläddskåp",
                     Image = "image here",                     //Återkommer med bild av denna magiska produkt
                     Description = "En revolutionerande produkt inom den magiska sektorn. Stig in i det stora skåpet, liten som stor och kliv ut med rena kläder från topp till tå. "
-                                  + "Plusset är är endast för att skapa utrymme när du skriver, så man slipper eviga rader som går utanför skärmen, typ som nu.",
+                                  
                     Cost = 7500,
                     Height = 10f,
                     Width = 5f,
                     Weight = 45,
-                    Warning = "Titta nogrant att du inte stiger in i detta magiska skåpet med hundskit, risken för en hemsk doft på kläderna ökar risken markant."
+                    Warning = "Titta nogrant att du inte stiger in i detta magiska skåpet med hundskit, risken för en hemsk doft på kläderna ökar risken markant. "
                 },
                 #endregion Furniture
                 #region Potion
@@ -122,12 +122,12 @@ namespace WebShopProject.Models
                 new PotionModel()
                 {
                     ID = "p07",
-                    Name = "",
-                    Image = "image here",
-                    Description = "",
-                    Cost = 0,
-                    Ingredients = "",
-                    Warning = ""
+                    Name = "Nattöga",
+                    Image = "image here", //återkommer med bild
+                    Description = "Upplever du ett försämrat synfält när du skall ta kvasten på natten? Vår nya potion nattöga, ger dig nightvison. ",
+                    Cost = 650,
+                    Ingredients = "Vargspindel öga, Vatten från dödahavet.",
+                    Warning = "OBS: en droppe för mycket av Nattöga, löper en storrisk för att tappa synen för alltid."
                 },
 
                 new PotionModel()
