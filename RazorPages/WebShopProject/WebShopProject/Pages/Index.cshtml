@@ -18,19 +18,29 @@
     <h3>Product List</h3>
     <table border="1">
         <tr>
-
+            <th>ID</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Cost</th>
+            <th>Action</th>
         </tr>
+        @foreach (var product in Model.Products) //Returnerar null ERROR, av någon anledning fungerar inte OnPost()
+            {
+
+            <tr align="center">
+                <td>@product.ID</td>
+                <td>@product.Name</td>
+                <td>@product.Image</td>
+                <td>@product.Cost</td>
+                <td>
+                    <a asp-page:"cart" asp-page-handler="buynow" asp-route-id="product.Id">Köp</a>
+                </td>
+            </tr>
+            }
 
 
 
-
-
-
-
-
-    </table>
-
-    
+   </table>
 
 </body>
 </html>

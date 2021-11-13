@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebShopProject.Models
+namespace WebShopProject.Data
 {
-    public static class ProductManager
+    public class ProductManager
     {
 
-        private static List<ProductModel> Products;
+        private List<ProductModel> Products;
 
         //jag har lagt till productmodels med alla kategorier, behövs bara förtydligande av olika föremål och det går att lägga
         //till om man så önskar. Jag la de ny-genererade produkterna i #regioner bara för att förtydliga ordningen
@@ -17,7 +17,7 @@ namespace WebShopProject.Models
 
         //Metoderna ska kunna hänvisas till pages senare.
 
-        public static List<ProductModel> GetProductModels()
+        public List<ProductModel> GetProducts()
         {
             if (Products == null || !Products.Any())
             { 
@@ -82,29 +82,29 @@ namespace WebShopProject.Models
                 new FurnitureModel()
                 {
                     ID = "f05",
-                    Name = "Magiska Elementet",
+                    Name = "Sol i Plunta",
                     Image = "image here",                                                                            // återkommer med bild av denna magiska produkt.
-                    Description = "Det magiska elementet som får hela ditt hem att framstå som en solsemester."
-                                  + "En revolutionerande magisk produkt som förändrar värmen för hela ditt hem.",              
+                    Description = "Långt kvar till semestern? Oroa dig inte, ta med dig din solsemester i en enkel plunta!."
+                                  + "En revolutionerande magisk produkt som inte bara värmer och lyser upp ditt hem, utan förändrar ditt humör till det bättre!",              
                     Cost = 3500,
                     Height = 6f,
                     Width = 7f,
                     Weight = 10,
-                    Warning = "Kan explodera vid en för HÖG värme halt. Vi rekomenderar att inte göra några magiska trollkarlsövningar i närheten av denna produkt, då explosion risken är hög. "
+                    Warning = "Varning: Hög explosionsrisk. Vi rekommenderar att inte göra några magiska trollkarlsövningar i närheten av denna produkt, då explosion risken är hög. "
                 },            
 
                 new FurnitureModel()
                 {
                     ID = "f05",
-                    Name = "Magiskt kläddskåp",
+                    Name = "Magiskt Klädskåp",
                     Image = "image here",                     //Återkommer med bild av denna magiska produkt
-                    Description = "En revolutionerande produkt inom den magiska sektorn. Stig in i det stora skåpet, liten som stor och kliv ut med rena kläder från topp till tå. ",
+                    Description = "Är du trött på alla timmar du lägger på fläckiga tröjor och få bort katthår från strumpor? Denna revolutionerande produkt är mycket populär bland trollkarlar som ska ut en fredagkväll. Stig in i det stora skåpet, liten som stor och kliv ut med rena kläder från topp till tå! ",
                                   
                     Cost = 7500,
                     Height = 10f,
                     Width = 5f,
                     Weight = 45,
-                    Warning = "Titta nogrant att du inte stiger in i detta magiska skåpet med hundskit, risken för en hemsk doft på kläderna ökar risken markant. "
+                    Warning = "Tyvärr tvättar skåpet inte bort dofter utan till och med stärker vissa, undvik att kliva in med stinkande kläder. "
                 },
                 #endregion Furniture
                 #region Potion
@@ -124,10 +124,10 @@ namespace WebShopProject.Models
                     ID = "p07",
                     Name = "Nattöga",
                     Image = "image here", //återkommer med bild
-                    Description = "Upplever du ett försämrat synfält när du skall ta kvasten på natten? Vår nya potion nattöga, ger dig nightvison. ",
+                    Description = "Har dvärgarna i energiverket glömt sätta igång gasbelysningen nu igen!? Köp då en Nattöga, så behöver du inte oroa dig över att krossa näsbenet under en eventuell flygkvastsfärd. ",
                     Cost = 650,
-                    Ingredients = "Vargspindel öga, Vatten från dödahavet.",
-                    Warning = "OBS: en droppe för mycket av Nattöga, löper en stor risk för att tappa synen för alltid."
+                    Ingredients = "Ögat från en noll-ögd vargspindel, Dödligt odrickbart vatten.",
+                    Warning = "OBS: Överkonsumption av denna dryck kan leda till att ena pupillern snurrar många varv i minuten likt en propeller, vilket kan distrahera något ofantligt i möte med någon annan."
                 },
 
                 new PotionModel()
@@ -155,11 +155,11 @@ namespace WebShopProject.Models
                 new PotionModel()
                 {
                     ID = "p10",
-                    Name = "MegaMind",
+                    Name = "Jättesmartis Elixir",
                     Image = "image here", // bild inom kort.
-                    Description = "MegaMind är ett elexir som höjer din IQ. I snitt ligger en männsikas IQ mellan 90-100. MegaMind ger dig en IQ på över 500. ",
+                    Description = "Vill du vara supersmart som dina magikerkompisar som alltid skryter om hur häftiga eldklot de kan kasta från fingertopparna utan större anstränging?MegaMind är ett elixir som höjer din IQ. I snitt ligger en männsikas IQ mellan 90-100. MegaMind ger dig en IQ på över 500. ",
                     Cost = 10000,
-                    Ingredients = "hjärncell från Albert Einstein, en skvätt amfetamin, uran-235  ",
+                    Ingredients = "Tandsten från en 400-årig trollkarl, en skvätt amfetamin, uran-235  ",
                     Warning = "Då uran-235 finns i MegaMind finns det risk för att hjärncellerna dör. "
                 },
                 #endregion Potion
@@ -169,31 +169,31 @@ namespace WebShopProject.Models
                     ID = "t11",
                     Name = "Lidemans blå",
                     Image = "image here",
-                    Description = "En stor exportsuccé utvecklad av dvärgarna i fiskebranchen - erbjuder en härlig smak av saltvatten, skelögd fulsträmming och vit fethaj.",
+                    Description = "En stor exportsuccé utvecklad av dvärgarna i fiskebranchen - erbjuder en härlig smak av saltvatten, skelögd fulströmming och vit fethaj.",
                     Cost = 40,
-                    Ingredients = "",
+                    Ingredients = "Bergssvampstobak, vatten, arom samt rökarom, havssalt, malen skelögd fulströmming, torkad vit fethaj ",
                     Warning = ""
                 },
 
                 new TobaccoModel()
                 {
                     ID = "t12",
-                    Name = "",
+                    Name = "Mild Tunnelsvinstobak",
                     Image = "image here",
-                    Description = "",
-                    Cost = 0,
-                    Ingredients = "",
+                    Description = "Ett passande alternativ för lite känsligare dvärgar.",
+                    Cost = 60,
+                    Ingredients = "Bergssvampstobak, vatten, arom samt rökarom, rökt tunnelsvinsbacon, sömnig kantarell, svett från en stressad sten",
                     Warning = ""
                 },
 
                 new TobaccoModel()
                 {
                     ID = "t13",
-                    Name = "",
+                    Name = "Malen Prästtumme",
                     Image = "image here",
-                    Description = "",
+                    Description = "En ceremoniell tuggtobak som bryts ner mellan käkarna på de stubbfyllda dvärgarna under minnesstunder för gamla surmulna förfäder.",
                     Cost = 0,
-                    Ingredients = "",
+                     Ingredients = "Bergssvampstobak, vatten, arom samt rökarom, aska från en kortväxt präst, torkat ölpulver, torkat kött från en grottbjörn",
                     Warning = ""
                 },
 
@@ -224,16 +224,16 @@ namespace WebShopProject.Models
             }
             return Products; 
 
-            //PROBLEM: Returnerar null, försöker lista ut en lösning!!!!
-            //fyllt i produkterna i dem 2 första spalterna. Det som skall läggas till i dem är bilder. Detta kan jag behöva hjälp med Karl-johan <3
+          
+            //Uppdaterat tobaksprodukter; inte färdigt
         }
 
-        public static List<ProductModel> FindAll()
+        public List<ProductModel> FindAll()
         {
             return Products;
         }
 
-       public static ProductModel FindID(string id)
+       public ProductModel FindID(string id)
         {
             return Products.Where(product => product.ID == id).FirstOrDefault(); //kopplat till ovanstående PROBLEM: Returnerar null
         }
