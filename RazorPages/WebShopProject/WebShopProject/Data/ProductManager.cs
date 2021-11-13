@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace WebShopProject.Models
 {
-    public class ProductManager
+    public static class ProductManager
     {
 
-        private List<ProductModel> Products;
+        private static List<ProductModel> Products;
 
         //jag har lagt till productmodels med alla kategorier, behövs bara förtydligande av olika föremål och det går att lägga
         //till om man så önskar. Jag la de ny-genererade produkterna i #regioner bara för att förtydliga ordningen
@@ -17,9 +17,7 @@ namespace WebShopProject.Models
 
         //Metoderna ska kunna hänvisas till pages senare.
 
-        //Ska ni lägga till nya föremål så ändra i koden:
-
-        public List<ProductModel> MyFunction()
+        public static List<ProductModel> GetProductModels()
         {
             if (Products == null || !Products.Any())
             { 
@@ -230,12 +228,12 @@ namespace WebShopProject.Models
             //fyllt i produkterna i dem 2 första spalterna. Det som skall läggas till i dem är bilder. Detta kan jag behöva hjälp med Karl-johan <3
         }
 
-        public List<ProductModel> FindAll()
+        public static List<ProductModel> FindAll()
         {
             return Products;
         }
 
-       public ProductModel FindID(string id)
+       public static ProductModel FindID(string id)
         {
             return Products.Where(product => product.ID == id).FirstOrDefault(); //kopplat till ovanstående PROBLEM: Returnerar null
         }

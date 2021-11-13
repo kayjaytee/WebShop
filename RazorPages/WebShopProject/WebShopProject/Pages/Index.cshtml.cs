@@ -11,12 +11,12 @@ namespace WebShopProject.Pages
 {
     public class IndexModel : PageModel
     {
-        public List<ProductModel> Products { get; private set; }
+        public List<ProductModel> Products;
 
         public void OnGet()
         {
-            ProductModel productmodel = new ProductModel();
-            Products = productmodel.FindAll();//kopplat till problem i Productmanager.cs -> PROBLEM: Returnerar null
+            List<ProductModel> productModels = ProductManager.GetProductModels();
+           
         }
     }
 }

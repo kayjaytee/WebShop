@@ -50,3 +50,4 @@ C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopPr
 C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.RazorAssemblyInfo.cache
 C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.RazorAssemblyInfo.cs
+C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\_ViewImports.cshtml.g.cs
