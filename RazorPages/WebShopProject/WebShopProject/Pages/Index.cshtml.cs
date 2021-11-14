@@ -15,8 +15,8 @@ namespace WebShopProject.Pages
 
         public void OnGet()
         {
-            ProductModel productmodel = new ProductModel();
-            Products = productmodel.FindAll();//kopplat till problem i Productmanager.cs -> PROBLEM: Returnerar null
+            ProductManager productManager = new ProductManager();
+            Products = productManager.FindAll();//kopplat till problem i Productmanager.cs -> PROBLEM: Returnerar null
         }
     }
 }
