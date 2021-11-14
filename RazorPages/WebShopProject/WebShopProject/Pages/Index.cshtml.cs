@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebShopProject.Models;
+using WebShopProject.Data;
+
 
 namespace WebShopProject.Pages
 {
