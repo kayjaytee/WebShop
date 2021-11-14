@@ -133,12 +133,12 @@ namespace WebShopProject.Data
                 new PotionModel()
                 {
                     ID = "p08",
-                    Name = "Jesus vatten potion",
+                    Name = "Jesus Karlssons' Vattenvandrare",
                     Image = "image here",      //återkommer med bild
-                    Description = "Detta elexir gör det omöjliga möjligt. Vi tog hjälp av jesus att framkalla detta. En potion som gör att du kan vandra över vatten.",
+                    Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark.",
                     Cost = 150,
-                    Ingredients = "Hårstrå från jesus, tånagel från Bigfoot. ",
-                    Warning = "Vid använding tänk på att alltid ha detta elexir i fickan, finns en stor risk att magin slutar verka och vi alla vet hur det skulle sluta ute på det öppna havet."
+                    Ingredients = "Hårstrå från en långhårig helgonsgroda, malda tånaglar från ett hårigt troll. ",
+                    Warning = "Vid fall och förlust av balans, kommer brukaren plaska i vattnet som vanligt."
                 },
 
                 new PotionModel()
@@ -146,10 +146,10 @@ namespace WebShopProject.Data
                     ID = "p09",
                     Name = "Skäggavfall",
                     Image = "image here",   //kommer med bild inom kort!
-                    Description = "Denna dryck gör din vardag som magiker enklare. Lider du av problemet skäggväxt? Två droppar av denna dryck på tungan och allt skägg åker av direkt.",
+                    Description = "Jobbigt att raka bort skäggstubben varje morgon? Två droppar av denna dryck på tungan och allt skägg åker av direkt! Superenkelt!",
                     Cost = 99,
-                    Ingredients = "Tunga från tiger, Dvärgsaliv, råttöra. ",
-                    Warning = "Risk för att tappa håret på andra ställen än i ansiktet. Studier visar även på att vissa har fått en infekterad pungkula. "
+                    Ingredients = "Tunga från en rosa tiger, saliv från en sömnig dvärg, finhackade råttöron. ",
+                    Warning = "Risk för att tappa håret på andra ställen än i ansiktet. Bortfall av hår kan hamna i kläder, orsaka stor irritation. "
                 },
 
                 new PotionModel()
@@ -157,10 +157,10 @@ namespace WebShopProject.Data
                     ID = "p10",
                     Name = "Jättesmartis Elixir",
                     Image = "image here", // bild inom kort.
-                    Description = "Vill du vara supersmart som dina magikerkompisar som alltid skryter om hur häftiga eldklot de kan kasta från fingertopparna utan större anstränging?MegaMind är ett elixir som höjer din IQ. I snitt ligger en männsikas IQ mellan 90-100. MegaMind ger dig en IQ på över 500. ",
+                    Description = "Vill du vara supersmart som dina magikerkompisar som alltid skryter om hur häftiga eldklot de kan kasta från fingertopparna utan större anstränging? Jättesmartis är ett elixir som höjer din intelligenskvot till övermänskliga nivåer, så du kan lista ut (nästan) alla knep i vardagen!",
                     Cost = 10000,
                     Ingredients = "Tandsten från en 400-årig trollkarl, en skvätt amfetamin, uran-235  ",
-                    Warning = "Då uran-235 finns i MegaMind finns det risk för att hjärncellerna dör. "
+                    Warning = "Bieffekt: Överkonsumption kan leda till Storkhalssyndrom och förstoring av skallloben. "
                 },
                 #endregion Potion
                 #region Tobacco
@@ -200,23 +200,23 @@ namespace WebShopProject.Data
                 new TobaccoModel()
                 {
                     ID = "t14",
-                    Name = "",
+                    Name = "Bennys Brödtobak",
                     Image = "image here",
-                    Description = "",
+                    Description = "Jobbigt att få i sig frukosten på morgonen? Ta en Bennys Brödtobak istället, få tillfredställelsen av både bröd och tobak på samma gång!",
                     Cost = 0,
-                    Ingredients = "",
+                    Ingredients = "Bergsvampstobak, vatten, arom samt rökarom, brödsmulor",
                     Warning = ""
                 },
 
                 new TobaccoModel()
                 {
                     ID = "t15",
-                    Name = "",
+                    Name = "Ronny Rödrasandes' Galenpanna",
                     Image = "image here",
-                    Description = "",
+                    Description = "En tuggtobak för dvärgar som behöver en riktig kick!",
                     Cost = 0,
-                    Ingredients = "",
-                    Warning = ""
+                    Ingredients = "Bergsvampstobak, vatten, arom samt rökarom, galenskapsdroppar, toksvamp",
+                    Warning = "Brukaren kommer bli extremt vresig och rättretlig, minsta lilla ord kommer framstå som en kränkning."
                 },
                 #endregion Tobacco
             };
