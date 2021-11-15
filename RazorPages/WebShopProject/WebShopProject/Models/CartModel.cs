@@ -7,6 +7,6 @@ namespace WebShopProject.Models
 {
     public class CartModel
     {
-        public int Item { get; set; }
+        public int ShoppingList { get; set; }
     }
 }
