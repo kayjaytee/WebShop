@@ -123,20 +123,20 @@ namespace WebShopProject.Data
                 new PotionModel()
                 {
                     ID = "p07",
-                    Name = "Nattöga",
-                    Image = "image here", //återkommer med bild
+                    Name = "Gunvalds' Nattöga",
+                    Image = Path.GetFileName("Nattöga.jpg"), //återkommer med bild
                     Description = "Har dvärgarna i energiverket glömt sätta igång gasbelysningen nu igen!? Köp då en Nattöga, så behöver du inte oroa dig över att krossa näsbenet under en eventuell flygkvastsfärd. ",
                     Cost = 650,
                     Ingredients = "Ögat från en noll-ögd vargspindel, Dödligt odrickbart vatten.",
-                    Warning = "OBS: Överkonsumption av denna dryck kan leda till att ena pupillern snurrar många varv i minuten likt en propeller, vilket kan distrahera något ofantligt i möte med någon annan."
+                    Warning = "OBS: Överkonsumption av denna dryck kan leda till Vindögdhet. Ena ögat kommer fara runt som två frihetsberövade mördarstorkar. Ytterst irriterande för den som försöker tala med den drabbade."
                 },
 
                 new PotionModel()
                 {
                     ID = "p08",
                     Name = "Jesus Karlssons' Vattenvandrare",
-                    Image = "image here",      //återkommer med bild
-                    Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark.",
+                    Image = Path.GetFileName("Nattöga"),      //återkommer med bild
+                    Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark och utan att förstöra skosulan!.",
                     Cost = 150,
                     Ingredients = "Hårstrå från en långhårig helgonsgroda, malda tånaglar från ett hårigt troll. ",
                     Warning = "Vid fall och förlust av balans, kommer brukaren plaska i vattnet som vanligt."
@@ -161,7 +161,7 @@ namespace WebShopProject.Data
                     Description = "Vill du vara supersmart som dina magikerkompisar som alltid skryter om hur häftiga eldklot de kan kasta från fingertopparna utan större anstränging? Jättesmartis är ett elixir som höjer din intelligenskvot till övermänskliga nivåer, så du kan lista ut (nästan) alla knep i vardagen!",
                     Cost = 10000,
                     Ingredients = "Tandsten från en 400-årig trollkarl, en skvätt amfetamin, uran-235  ",
-                    Warning = "Bieffekt: Överkonsumption kan leda till Storkhalssyndrom och förstoring av skallloben. "
+                    Warning = "Bieffekt: Överkonsumption kan leda till Storkhalssyndrom och den stackars brukaren kommer ha en tre gånger så lång hals som normalt, något som dock lämpar sig utomordentlgit för spanning upp genom gatubrunnar. "
                 },
                 #endregion Potion
                 #region Tobacco
