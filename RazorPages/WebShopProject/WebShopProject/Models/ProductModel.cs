@@ -12,10 +12,6 @@ namespace WebShopProject.Models
         public string Image { get; set; }
         public string Description { get; set; }
         public decimal Cost { get; set; }
-        public float Height { get; set; }
-        public float Width { get; set; }
-        public float Weight { get; set; }
-        public string Ingredients { get; set; }
         public string Warning { get; set; }
 
     }

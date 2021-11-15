@@ -5,11 +5,8 @@ using System.Threading.Tasks;
 
 namespace WebShopProject.Models
 {
-    public class PotionModel : ProductModel
+    public class CartModel
     {
-
-        public string Ingredients { get; set; }
-
-
+        public int Item { get; set; }
     }
 }

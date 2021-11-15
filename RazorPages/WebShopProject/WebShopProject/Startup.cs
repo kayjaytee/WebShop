@@ -35,6 +35,8 @@ namespace WebShopProject
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
+                app.UseStaticFiles();
             }
             else
             {

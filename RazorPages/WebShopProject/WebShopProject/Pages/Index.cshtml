@@ -19,21 +19,21 @@
     <table border="1">
         <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>Image</th>
-            <th>Cost</th>
-            <th>Action</th>
+            <th>Namn</th>
+            <th>Bild</th>
+            <th>Pris</th>
+            <th>Köp</th>
         </tr>
-        @foreach (var product in Model.Products) //Returnerar null ERROR, av någon anledning fungerar inte OnPost()
+        @foreach (var item in Model.Products) //Returnerar men visar inget; försöker lista ut varför
             {
 
             <tr align="center">
-                <td>@product.ID</td>
-                <td>@product.Name</td>
-                <td>@product.Image</td>
-                <td>@product.Cost</td>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>@item.Image</td>
+                <td>@item.Cost</td>
                 <td>
-                    <a asp-page:"cart" asp-page-handler="buynow" asp-route-id="product.Id">Köp</a>
+                    <a asp-page:"cart" asp-page-handler="buynow" asp-route-id="@item.ID">Köp</a>
                 </td>
             </tr>
             }

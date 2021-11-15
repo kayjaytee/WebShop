@@ -13,12 +13,24 @@ namespace WebShopProject.Pages
 {
     public class IndexModel : PageModel
     {
-        public List<ProductModel> Products { get; private set; }
+        public List<ProductModel> Products { get; set; }
+
+        [BindProperty] public string ID { get; set; }
+        [BindProperty] public string Name { get; set; }
+        [BindProperty] public string Image { get; set; }
+        [BindProperty] public decimal Cost { get; set; }
 
         public void OnGet()
         {
             ProductManager productManager = new ProductManager();
-            Products = productManager.FindAll();//kopplat till problem i Productmanager.cs -> PROBLEM: Returnerar null
+            Products = productManager.GetProducts(); //Hämtar listan, sen returnerar
         }
+
+        public void OnPost()
+        {
+            ProductManager productManager = new ProductManager();
+            Products = productManager.FindAll(); //returnerar bara
+        }
+
     }
 }
