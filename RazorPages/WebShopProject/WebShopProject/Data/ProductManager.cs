@@ -56,7 +56,7 @@ namespace WebShopProject.Data
                 {
                     ID = "f03",
                     Name = "Svävande Bärstol",
-                    Image = "image here",
+                    Image = Path.GetFileName("Svävandebärstol.jpg"),
                     Description = "Vill du kunna sväva utan större ansträngning upp till femton meter över marken?"
                                   + "Denna lyxiga bärstol av ädelträ styrs med dina tankar och kan flyga upp till 100 kilometer i timmen!",
                     Cost = 55000,
@@ -84,7 +84,7 @@ namespace WebShopProject.Data
                 {
                     ID = "f05",
                     Name = "Sol i Burk",
-                    Image = "image here",                                                                            // återkommer med bild av denna magiska produkt.
+                    Image = Path.GetFileName("Soliburk.png"),                                                                        // återkommer med bild av denna magiska produkt.
                     Description = "Långt kvar till semestern? Oroa dig inte, ta med dig din solsemester i en enkel burk! "
                                   + "En revolutionerande magisk produkt som inte bara värmer och lyser upp ditt hem, utan förändrar ditt humör till det bättre!",              
                     Cost = 3500,
@@ -98,7 +98,7 @@ namespace WebShopProject.Data
                 {
                     ID = "f05",
                     Name = "Magiskt Klädskåp",
-                    Image = "image here",                     //Återkommer med bild av denna magiska produkt
+                    Image = Path.GetFileName(""),                    //Återkommer med bild av denna magiska produkt
                     Description = "Är du trött på alla timmar du lägger på fläckiga tröjor och få bort katthår från strumpor? Denna revolutionerande produkt är mycket populär bland trollkarlar som ska ut en fredagkväll. Stig in i det stora skåpet, liten som stor och kliv ut med rena kläder från topp till tå! ",
                                   
                     Cost = 7500,
@@ -169,7 +169,7 @@ namespace WebShopProject.Data
                 {
                     ID = "t11",
                     Name = "Lidemans blå",
-                    Image = "image here",
+                    Image = Path.GetFileName("Lidemansblå.jpg"),
                     Description = "En stor exportsuccé utvecklad av dvärgarna i fiskebranchen - erbjuder en härlig smak av saltvatten, skelögd fulströmming och vit fethaj.",
                     Cost = 40,
                     Ingredients = "Bergssvampstobak, vatten, arom samt rökarom, havssalt, malen skelögd fulströmming, torkad vit fethaj ",
@@ -180,7 +180,7 @@ namespace WebShopProject.Data
                 {
                     ID = "t12",
                     Name = "Mild Tunnelsvinstobak",
-                    Image = "image here",
+                    Image = Path.GetFileName(""),
                     Description = "Ett passande alternativ för lite känsligare dvärgar.",
                     Cost = 60,
                     Ingredients = "Bergssvampstobak, vatten, arom samt rökarom, rökt tunnelsvinsbacon, sömnig kantarell, svett från en stressad sten",
@@ -191,7 +191,7 @@ namespace WebShopProject.Data
                 {
                     ID = "t13",
                     Name = "Malen Prästtumme",
-                    Image = "image here",
+                    Image = Path.GetFileName("Malenprästtumme.jpeg"),
                     Description = "En ceremoniell tuggtobak som bryts ner mellan käkarna på de stubbfyllda dvärgarna under minnesstunder för gamla surmulna förfäder.",
                     Cost = 0,
                      Ingredients = "Bergssvampstobak, vatten, arom samt rökarom, aska från en kortväxt präst, torkat ölpulver, torkat kött från en grottbjörn",
@@ -202,9 +202,9 @@ namespace WebShopProject.Data
                 {
                     ID = "t14",
                     Name = "Bennys Brödtobak",
-                    Image = "image here",
+                    Image = Path.GetFileName("Bennysbrödtobak.jpg"),
                     Description = "Jobbigt att få i sig frukosten på morgonen? Ta en Bennys Brödtobak istället, få tillfredställelsen av både bröd och tobak på samma gång!",
-                    Cost = 0,
+                    Cost = 15,
                     Ingredients = "Bergsvampstobak, vatten, arom samt rökarom, brödsmulor",
                     Warning = ""
                 },
@@ -213,11 +213,11 @@ namespace WebShopProject.Data
                 {
                     ID = "t15",
                     Name = "Ronny Rödrasandes' Galenpanna",
-                    Image = "image here",
+                    Image = Path.GetFileName("Ronnyrödrasandesgalenpanna.png"),
                     Description = "En tuggtobak för dvärgar som behöver en riktig kick!",
-                    Cost = 0,
+                    Cost = 95,
                     Ingredients = "Bergsvampstobak, vatten, arom samt rökarom, galenskapsdroppar, toksvamp",
-                    Warning = "Brukaren kommer bli extremt vresig och rättretlig, minsta lilla ord kommer framstå som en kränkning."
+                    Warning = "Brukaren kommer bli extremt vresig och rättretlig, minsta lilla ord kommer framstå som en kränkning och brukaren kommer med stor sannolikhet hamna i en knytnävesbatalj inom kommande timmarna."
                 },
                 #endregion Tobacco
             };
