@@ -84,7 +84,7 @@ namespace WebShopProject.Data
                 {
                     ID = "f05",
                     Name = "Sol i Burk",
-                    Image = Path.GetFileName("Soliburk.png"),                                                                        // återkommer med bild av denna magiska produkt.
+                    Image = Path.GetFileName("Soliburk.jpg"),                                                                        // återkommer med bild av denna magiska produkt.
                     Description = "Långt kvar till semestern? Oroa dig inte, ta med dig din solsemester i en enkel burk! "
                                   + "En revolutionerande magisk produkt som inte bara värmer och lyser upp ditt hem, utan förändrar ditt humör till det bättre!",              
                     Cost = 3500,
@@ -123,13 +123,8 @@ namespace WebShopProject.Data
                 new PotionModel()
                 {
                     ID = "p07",
-
-                    Name = "Nattöga",
-                    Image = Path.GetFileName(""),
-
                     Name = "Gunvalds' Nattöga",
                     Image = Path.GetFileName("Nattöga.jpg"), //återkommer med bild
-
                     Description = "Har dvärgarna i energiverket glömt sätta igång gasbelysningen nu igen!? Köp då en Nattöga, så behöver du inte oroa dig över att krossa näsbenet under en eventuell flygkvastsfärd. ",
                     Cost = 650,
                     Ingredients = "Ögat från en noll-ögd vargspindel, Dödligt odrickbart vatten.",
@@ -140,13 +135,8 @@ namespace WebShopProject.Data
                 {
                     ID = "p08",
                     Name = "Jesus Karlssons' Vattenvandrare",
-
-                    Image = Path.GetFileName(""),
-                    Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark.",
-
                     Image = Path.GetFileName("Nattöga"),      //återkommer med bild
                     Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark och utan att förstöra skosulan!.",
-
                     Cost = 150,
                     Ingredients = "Hårstrå från en långhårig helgonsgroda, malda tånaglar från ett hårigt troll. ",
                     Warning = "Vid fall och förlust av balans, kommer brukaren plaska i vattnet som vanligt."
@@ -155,7 +145,7 @@ namespace WebShopProject.Data
                 new PotionModel()
                 {
                     ID = "p09",
-                    Name = "Skäggavfall",
+                    Name = "Sune Surstrumpas' Skäggavfalls",
                     Image = Path.GetFileName(""),
                     Description = "Jobbigt att raka bort skäggstubben varje morgon? Två droppar av denna dryck på tungan och allt skägg åker av direkt! Superenkelt!",
                     Cost = 99,
@@ -190,7 +180,7 @@ namespace WebShopProject.Data
                 {
                     ID = "t12",
                     Name = "Mild Tunnelsvinstobak",
-                    Image = Path.GetFileName(""),
+                    Image = Path.GetFileName("Mildtunnelsvinstobak.jpg"),
                     Description = "Ett passande alternativ för lite känsligare dvärgar.",
                     Cost = 60,
                     Ingredients = "Bergssvampstobak, vatten, arom samt rökarom, rökt tunnelsvinsbacon, sömnig kantarell, svett från en stressad sten",

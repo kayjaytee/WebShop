@@ -9,9 +9,9 @@ namespace WebShopProject.Data
     public class CartManager
     {
 
-        private List<CartModel> Cart;
+        private List<CartManager> Cart;
 
-        public object Products { get; set; }
+  
 
         /*public List<CartModel> GetCart() //Koden är inte färdig, Cart ska hämta produkter ur List<ProductModel> och hanteras seperat som en oberoende List<>
         {
