@@ -123,13 +123,13 @@ namespace WebShopProject.Data
                 new PotionModel()
                 {
                     ID = "p07",
-<<<<<<< HEAD
+
                     Name = "Nattöga",
                     Image = Path.GetFileName(""),
-=======
+
                     Name = "Gunvalds' Nattöga",
                     Image = Path.GetFileName("Nattöga.jpg"), //återkommer med bild
->>>>>>> 3b1657b90d49f195b8310550f3a0c8c168a6251f
+
                     Description = "Har dvärgarna i energiverket glömt sätta igång gasbelysningen nu igen!? Köp då en Nattöga, så behöver du inte oroa dig över att krossa näsbenet under en eventuell flygkvastsfärd. ",
                     Cost = 650,
                     Ingredients = "Ögat från en noll-ögd vargspindel, Dödligt odrickbart vatten.",
@@ -140,13 +140,13 @@ namespace WebShopProject.Data
                 {
                     ID = "p08",
                     Name = "Jesus Karlssons' Vattenvandrare",
-<<<<<<< HEAD
+
                     Image = Path.GetFileName(""),
                     Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark.",
-=======
+
                     Image = Path.GetFileName("Nattöga"),      //återkommer med bild
                     Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark och utan att förstöra skosulan!.",
->>>>>>> 3b1657b90d49f195b8310550f3a0c8c168a6251f
+
                     Cost = 150,
                     Ingredients = "Hårstrå från en långhårig helgonsgroda, malda tånaglar från ett hårigt troll. ",
                     Warning = "Vid fall och förlust av balans, kommer brukaren plaska i vattnet som vanligt."
