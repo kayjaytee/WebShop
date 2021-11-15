@@ -41,7 +41,7 @@ namespace WebShopProject.Data
                 {
                     ID = "f02",
                     Name = "Varma Muggen",
-                    Image = "image here",
+                    Image = "wwwroot/image/Varmamuggen.png",
                     Description = "Är du inte trött på att behöva värma kaffet varje gång du glömt av att dricka den sista slurpen? "
                                   + "Oroa dig inte, denna magiska mugg är förtrollad med värmande magi och du behöver nu aldrig stressa dig i kaffet!",
                     Cost = 750,
@@ -84,13 +84,13 @@ namespace WebShopProject.Data
                     ID = "f05",
                     Name = "Sol i Plunta",
                     Image = "image here",                                                                            // återkommer med bild av denna magiska produkt.
-                    Description = "Långt kvar till semestern? Oroa dig inte, ta med dig din solsemester i en enkel plunta!."
+                    Description = "Långt kvar till semestern? Oroa dig inte, ta med dig din solsemester i en enkel plunta! "
                                   + "En revolutionerande magisk produkt som inte bara värmer och lyser upp ditt hem, utan förändrar ditt humör till det bättre!",              
                     Cost = 3500,
                     Height = 6f,
                     Width = 7f,
                     Weight = 10,
-                    Warning = "Varning: Hög explosionsrisk. Vi rekommenderar att inte göra några magiska trollkarlsövningar i närheten av denna produkt, då explosion risken är hög. "
+                    Warning = "Varning: Bör inte konsumeras. Brukaren kommer drabbas av en mycket kraft halsbränna som sitter i en dryg vecka. Under veckan kommer brukaren andas eld och förbränner, snarare än smälter, all mat som konsumeras. "
                 },            
 
                 new FurnitureModel()

@@ -23,13 +23,13 @@ namespace WebShopProject.Pages
         public void OnGet()
         {
             ProductManager productManager = new ProductManager();
-            Products = productManager.GetProducts();
+            Products = productManager.GetProducts(); //Hämtar listan, sen returnerar
         }
 
         public void OnPost()
         {
             ProductManager productManager = new ProductManager();
-            Products = productManager.FindAll();
+            Products = productManager.FindAll(); //returnerar bara
         }
 
     }

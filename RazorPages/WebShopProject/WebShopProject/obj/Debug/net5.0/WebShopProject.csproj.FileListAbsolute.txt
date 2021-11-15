@@ -23,7 +23,6 @@ C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopP
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.TagHelpers.input.cache
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.TagHelpers.output.cache
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.RazorCoreGenerate.cache
-C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\Pages\ContactUs.cshtml.g.cs
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\Pages\Details.cshtml.g.cs
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
