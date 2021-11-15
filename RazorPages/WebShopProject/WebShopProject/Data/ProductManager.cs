@@ -3,6 +3,7 @@ using WebShopProject.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace WebShopProject.Data
 {
@@ -28,7 +29,7 @@ namespace WebShopProject.Data
                 {
                     ID = "f01",
                     Name = "Lergoblin",
-                    Image = "image here",
+                    Image = Path.GetFileName("Lergoblin.png"),
                     Description = "En liten figur som sjunger tvåstämmigt den kända ”Kloaksonaten” – inte särskilt vacker melodi, men underhållande!",
                     Cost = 50,
                     Height = 0.3f,
@@ -41,7 +42,7 @@ namespace WebShopProject.Data
                 {
                     ID = "f02",
                     Name = "Varma Muggen",
-                    Image = "wwwroot/image/Varmamuggen.png",
+                    Image = Path.GetFileName("Varmamuggen.png"),
                     Description = "Är du inte trött på att behöva värma kaffet varje gång du glömt av att dricka den sista slurpen? "
                                   + "Oroa dig inte, denna magiska mugg är förtrollad med värmande magi och du behöver nu aldrig stressa dig i kaffet!",
                     Cost = 750,
@@ -69,7 +70,7 @@ namespace WebShopProject.Data
                 {
                     ID = "f04",
                     Name = "Magisk Självfejande Sopkvast",
-                    Image = "image here",
+                    Image = Path.GetFileName("Magiskhäxkvast.png"),
                     Description = "Trött på städa? Eller kanske sugen på en snabb flygtur?"
                                   + "Denna magiska kvast är självfejande och städar åt dig i samtliga rum och är samt kapabel för en snabb flygresa. Ett populärt föremål i Häxornas' Krokryggsförening.",
                     Cost = 4000,
@@ -82,9 +83,9 @@ namespace WebShopProject.Data
                 new FurnitureModel()
                 {
                     ID = "f05",
-                    Name = "Sol i Plunta",
+                    Name = "Sol i Burk",
                     Image = "image here",                                                                            // återkommer med bild av denna magiska produkt.
-                    Description = "Långt kvar till semestern? Oroa dig inte, ta med dig din solsemester i en enkel plunta! "
+                    Description = "Långt kvar till semestern? Oroa dig inte, ta med dig din solsemester i en enkel burk! "
                                   + "En revolutionerande magisk produkt som inte bara värmer och lyser upp ditt hem, utan förändrar ditt humör till det bättre!",              
                     Cost = 3500,
                     Height = 6f,
