@@ -98,7 +98,7 @@ namespace WebShopProject.Data
                 {
                     ID = "f05",
                     Name = "Magiskt Klädskåp",
-                    Image = Path.GetFileName(""),                    //Återkommer med bild av denna magiska produkt
+                    Image = Path.GetFileName(""),                    
                     Description = "Är du trött på alla timmar du lägger på fläckiga tröjor och få bort katthår från strumpor? Denna revolutionerande produkt är mycket populär bland trollkarlar som ska ut en fredagkväll. Stig in i det stora skåpet, liten som stor och kliv ut med rena kläder från topp till tå! ",
                                   
                     Cost = 7500,
@@ -113,7 +113,7 @@ namespace WebShopProject.Data
                 {
                     ID = "p06",
                     Name = "Blyfot",
-                    Image = "image here",
+                    Image = Path.GetFileName(""),
                     Description = "En passande brygd för någon som känner sig busig! Den som får i sig denna brygd kommer göra ena foten 20 kilo tyngre än den andra.",
                     Cost = 500,
                     Ingredients = "Stortån från ett grinigt troll, hårväxt från en skallig dvärg prästinnas fötter",
@@ -124,7 +124,7 @@ namespace WebShopProject.Data
                 {
                     ID = "p07",
                     Name = "Nattöga",
-                    Image = "image here", //återkommer med bild
+                    Image = Path.GetFileName(""),
                     Description = "Har dvärgarna i energiverket glömt sätta igång gasbelysningen nu igen!? Köp då en Nattöga, så behöver du inte oroa dig över att krossa näsbenet under en eventuell flygkvastsfärd. ",
                     Cost = 650,
                     Ingredients = "Ögat från en noll-ögd vargspindel, Dödligt odrickbart vatten.",
@@ -135,7 +135,7 @@ namespace WebShopProject.Data
                 {
                     ID = "p08",
                     Name = "Jesus Karlssons' Vattenvandrare",
-                    Image = "image here",      //återkommer med bild
+                    Image = Path.GetFileName(""),
                     Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark.",
                     Cost = 150,
                     Ingredients = "Hårstrå från en långhårig helgonsgroda, malda tånaglar från ett hårigt troll. ",
@@ -146,7 +146,7 @@ namespace WebShopProject.Data
                 {
                     ID = "p09",
                     Name = "Skäggavfall",
-                    Image = "image here",   //kommer med bild inom kort!
+                    Image = Path.GetFileName(""),
                     Description = "Jobbigt att raka bort skäggstubben varje morgon? Två droppar av denna dryck på tungan och allt skägg åker av direkt! Superenkelt!",
                     Cost = 99,
                     Ingredients = "Tunga från en rosa tiger, saliv från en sömnig dvärg, finhackade råttöron. ",
@@ -157,7 +157,7 @@ namespace WebShopProject.Data
                 {
                     ID = "p10",
                     Name = "Jättesmartis Elixir",
-                    Image = "image here", // bild inom kort.
+                    Image = Path.GetFileName(""),
                     Description = "Vill du vara supersmart som dina magikerkompisar som alltid skryter om hur häftiga eldklot de kan kasta från fingertopparna utan större anstränging? Jättesmartis är ett elixir som höjer din intelligenskvot till övermänskliga nivåer, så du kan lista ut (nästan) alla knep i vardagen!",
                     Cost = 10000,
                     Ingredients = "Tandsten från en 400-årig trollkarl, en skvätt amfetamin, uran-235  ",
