@@ -15,25 +15,27 @@ namespace WebShopProject.Pages
     {
         public List<ProductModel> Products { get; set; }
 
+        public List<ProductModel> ShoppingCart { get; set; }
+
         [BindProperty] public string ID { get; set; }
         [BindProperty] public string Name { get; set; }
         [BindProperty] public string Image { get; set; }
         [BindProperty] public decimal Cost { get; set; }
 
-        public void OnGetAddToShoppingCart(string id)
-        {
-        
 
 
-        }
-
-
-        public void OnGet() //Skickar c# kod
+        public void OnGet(string cartid) //Skickar c# kod
         {
             ProductManager productManager = new ProductManager();
-            Products = productManager.GetProducts(); //Hämtar listan, sen returnerar
+            CartManager cartManager = new CartManager();
 
-            
+            Products = productManager.GetProducts(); //Hämtar listan, sen returnerar
+            ShoppingCart = cartManager.GetShoppingCart();
+            if (cartid != null)
+            {
+                var product = Products.Where(x => x.ID == cartid).FirstOrDefault();
+                CartManager.AddToShoppingCart(product);
+            }
         }
 
         public void OnPost() //Returnerar kod

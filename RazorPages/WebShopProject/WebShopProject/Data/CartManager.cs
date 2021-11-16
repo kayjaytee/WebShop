@@ -5,30 +5,18 @@ namespace WebShopProject.Data
 {
     public class CartManager
     {
+        public List<ProductModel> ShoppingCart { get; set; } = new List<ProductModel>();
 
+        public List<ProductModel> GetShoppingCart()
+        {
+            return ShoppingCart;
+        }
 
-    }
-
-
-
-}
-
-
-
-        //public List<CartModel> CheckCart()
-        //{
-        //    if(ShoppingCart == null || !ShoppingCart.Any())
-        //    {
-
-        //    }
-
-        //    return ShoppingCart;
-        //}
-
-        //public string AddProductToCart(int id, string name)
-        //{
-        //    CartManager cartManager = ShoppingCart.Where(cartManager => cartManager.N)
-        //}
+        public List<ProductModel> AddToShoppingCart(ProductModel shoppingcart)
+        {
+            ShoppingCart.Add(shoppingcart);
+            return ShoppingCart;
+        }
 
     }
 }

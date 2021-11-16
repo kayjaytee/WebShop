@@ -33,9 +33,27 @@
                 <td><img src="~/images/@item.Image" width="250" height="250" /></td>
                 <td>@item.Cost</td>
                 <td>
-                    <a asp-page:"cart" asp-page-handler="buynow" asp-route-id="@item.ID">Köp</a>
-                    <button onclick="Clickhere" type="button"></button>
+                    <a asp-page="index" asp-page-handler="buynow" asp-route-id="@item.ID">Köp</a>
                 </td>
+            </tr>
+        }
+
+    </table>
+
+</body>
+
+<body>
+
+    <h3>Buy List</h3>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+        </tr>
+        @foreach (var item in Model.ShoppingCart)
+        {
+
+            <tr align="center">
+                <td>@item.ID</td>
             </tr>
         }
 
