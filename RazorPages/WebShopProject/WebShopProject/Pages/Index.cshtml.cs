@@ -20,13 +20,23 @@ namespace WebShopProject.Pages
         [BindProperty] public string Image { get; set; }
         [BindProperty] public decimal Cost { get; set; }
 
-        public void OnGet()
+        public void OnGetAddToShoppingCart(string id)
+        {
+        
+
+
+        }
+
+
+        public void OnGet() //Skickar c# kod
         {
             ProductManager productManager = new ProductManager();
             Products = productManager.GetProducts(); //Hämtar listan, sen returnerar
+
+            
         }
 
-        public void OnPost()
+        public void OnPost() //Returnerar kod
         {
             ProductManager productManager = new ProductManager();
             Products = productManager.FindAll(); //returnerar bara

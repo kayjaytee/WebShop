@@ -1,21 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using WebShopProject.Models;
-using System.Data
-using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebShopProject.Data
 {
-    public class CartManager : PageModel
+    public class CartManager
     {
-      public List<Models.ProductModel> GetCart()
-      {
-            return Data.ProductManager.GetCartItems();
-      }
 
 
+    }
+
+
+
+}
+
+
+
+        //public List<CartModel> CheckCart()
+        //{
+        //    if(ShoppingCart == null || !ShoppingCart.Any())
+        //    {
+
+        //    }
+
+        //    return ShoppingCart;
+        //}
+
+        //public string AddProductToCart(int id, string name)
+        //{
+        //    CartManager cartManager = ShoppingCart.Where(cartManager => cartManager.N)
+        //}
 
     }
 }

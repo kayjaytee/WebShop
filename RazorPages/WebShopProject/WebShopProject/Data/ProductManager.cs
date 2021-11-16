@@ -12,6 +12,9 @@ namespace WebShopProject.Data
 
         private List<ProductModel> Products;
 
+        CartManager Shoppingcart = new CartManager();
+
+
         //jag har lagt till productmodels med alla kategorier, behövs bara förtydligande av olika föremål och det går att lägga
         //till om man så önskar. Jag la de ny-genererade produkterna i #regioner bara för att förtydliga ordningen
         //Nedanför har jag försökt skapa metoder för att kunna söka på olika prylar, men behöver arbeta lite mer på det (och nu är jag trött)
@@ -226,7 +229,7 @@ namespace WebShopProject.Data
             return Products; 
 
           
-            //Uppdaterat tobaksprodukter; inte färdigt
+      
         }
 
         public List<ProductModel> FindAll()
@@ -238,6 +241,7 @@ namespace WebShopProject.Data
         {
             return Products.Where(product => product.ID == id).FirstOrDefault(); //kopplat till ovanstående PROBLEM: Returnerar null
         }
+
     }
 
 }

@@ -24,7 +24,7 @@
             <th>Pris</th>
             <th>Köp</th>
         </tr>
-        @foreach (var item in Model.Products) //Returnerar men visar inget; försöker lista ut varför
+        @foreach (var item in Model.Products)
         {
 
             <tr align="center">
@@ -34,13 +34,10 @@
                 <td>@item.Cost</td>
                 <td>
                     <a asp-page:"cart" asp-page-handler="buynow" asp-route-id="@item.ID">Köp</a>
-                    <button type="button">Lägg till i Cart-Knapp!</button>
+                    <button onclick="Clickhere" type="button"></button>
                 </td>
             </tr>
         }
-
-
-
 
     </table>
 
