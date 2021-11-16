@@ -3,21 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebShopProject.Models;
+using System.Data
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebShopProject.Data
 {
-    public class CartManager
+    public class CartManager : PageModel
     {
-
-        private List<CartManager> Cart;
-
-  
-
-        /*public List<CartModel> GetCart() //Koden är inte färdig, Cart ska hämta produkter ur List<ProductModel> och hanteras seperat som en oberoende List<>
+        public void OnGet(int id)
         {
-
-
-        }*/
+         
+        }
 
 
 
