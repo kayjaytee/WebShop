@@ -10,10 +10,10 @@ namespace WebShopProject.Data
 {
     public class CartManager : PageModel
     {
-        public void OnGet(int id)
-        {
-         
-        }
+      public List<Models.ProductModel> GetCart()
+      {
+            return Data.ProductManager.GetCartItems();
+      }
 
 
 
