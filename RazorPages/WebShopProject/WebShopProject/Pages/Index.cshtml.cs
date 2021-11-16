@@ -34,7 +34,7 @@ namespace WebShopProject.Pages
             if (cartid != null)
             {
                 var product = Products.Where(x => x.ID == cartid).FirstOrDefault();
-                CartManager.AddToShoppingCart(product);
+                cartManager.AddToShoppingCart(product);
             }
         }
 
@@ -42,6 +42,14 @@ namespace WebShopProject.Pages
         {
             ProductManager productManager = new ProductManager();
             Products = productManager.FindAll(); //returnerar bara
+
+            Console.WriteLine("Returning List:" + productManager);
+            foreach(var item in ShoppingCart)
+            {
+                Console.WriteLine(item.ID);
+            }
+
+
         }
 
     }
