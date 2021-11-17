@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using WebShopProject.Data;
 using WebShopProject.Models;
 
@@ -10,7 +11,7 @@ namespace WebShopProject.Pages
     public class DetailsModel : PageModel
     {
 
-        public List<ProductModel> Products { get; set; }
+        public IEnumerable<ProductModel> Products { get; set; }
 
         public List<ProductModel> ShoppingCart { get; set; }
 
@@ -24,17 +25,15 @@ namespace WebShopProject.Pages
         [BindProperty] public float Width { get; set; }
         [BindProperty] public float Weight { get; set; }
         [BindProperty] public string Ingredients { get; set; }
-        public void OnGet(string cartid) //Skickar c# kod
+        public void OnGet(string productid) //Skickar c# kod
         {
             ProductManager productManager = new ProductManager();
-            CartManager cartManager = new CartManager();
 
             Products = productManager.GetProducts(); //Hämtar listan, sen returnerar
-            ShoppingCart = cartManager.GetShoppingCart();
-            if (cartid != null)
+            if (productid != null)
             {
-                var product = Products.Where(x => x.ID == cartid).FirstOrDefault();
-                cartManager.AddToShoppingCart(product);
+                Products = Products.Where(x => x.ID == productid);
+                //cartManager.AddToShoppingCart(product);
             }
         }
 
@@ -49,4 +48,7 @@ namespace WebShopProject.Pages
                 Console.WriteLine(item.ID);
             }
         }
+    }
+
 }
+
