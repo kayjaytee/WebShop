@@ -36,8 +36,10 @@
                 <img src="~/images/Silver_Coin.png" />
                 </td>
                 <td>
-                    <a asp-page="index" asp-route-cartid="@item.ID">Köp</a>
-                </td>
+                    <div class="ui inverted segment">
+                        <button class="ui green button" asp-page="index" asp-route-cartid="@item.ID">Köp</button> </div>
+                        <a asp-page="index" asp-route-cartid="@item.ID">Köp</a>
+                        </td>
             </tr>
         }
 
@@ -68,6 +70,6 @@
 
 
 <div class="text-center">
-    <h1 class="display-4">Magiska Galleriet</h1>
+    <h1 class="display-4">Magiska Shopping Gallerian</h1>
     <p>"Allt lyx en trollkarl kan tyckas behöva!"</p>
 </div>
