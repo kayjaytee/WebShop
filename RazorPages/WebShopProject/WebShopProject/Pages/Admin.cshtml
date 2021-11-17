@@ -1,0 +1,28 @@
+﻿@page
+@model WebShopProject.Pages.AdminModel
+@{
+}
+
+<h3> Admin </h3>
+
+
+<form method="post">
+    <label>Ny Produkt ID-namngivning: </label>
+    <input asp-for="@Model.ID" />
+
+    <label>Nytt Namn för Produkt: </label>
+    <input asp-for="@Model.Name" />
+
+    <label>Sträng för eventuell Bild:</label>
+    <input asp-for="@Model.Image" />
+
+    <label>Beskrivning av Produkt:</label>
+    <input asp-for="@Model.Description" />
+
+    <label>Kostnad av Produkt (I Silvermynt):</label>
+    <input asp-for="@Model.Cost" />
+
+    <label>Varningsettikett:</label>
+    <input asp-for="@Model.Warning" />
+    <input type="submit" value="Ok" />
+</form>

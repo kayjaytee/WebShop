@@ -15,18 +15,10 @@ namespace WebShopProject.Pages
     public class IndexModel : PageModel
     {
 
-        //private readonly Data.ProductManager _context;
-
-        //public IndexModel(Data.ProductManager context)
-        //{
-        //    _context = context;
-        //}
-
         public List<ProductModel> Products { get; set; }
-        //[BindProperty(SupportsGet = true)]
+    
         public string SearchString { get; set; }
-        //public SelectList SelectListProducts { get; set; }
-        //[BindProperty(SupportsGet = true)]
+
 
         public List<ProductModel> ShoppingCart { get; set; }
 
@@ -34,29 +26,6 @@ namespace WebShopProject.Pages
         [BindProperty] public string Name { get; set; }
         [BindProperty] public string Image { get; set; }
         [BindProperty] public decimal Cost { get; set; }
-
-        //public async Task OnGetASync()
-        //{
-
-        //    IQueryable<string> productQuery = from p in _context.GetProducts();
-        //                                      orderby p.Name
-        //                                      select p.Name;
-
-
-        //    var products = from prod in _context.GetProducts()
-        //                   select prod;
-
-        //    if (!string.IsNullOrEmpty(SearchString))
-        //    {
-        //        products = products.Where(s => s.Name.Contains(SearchString));
-        //    }
-        //    if (!string.IsNullOrEmpty(prod.Name))
-        //    {
-        //        products = products.Where(x => x.Name == prod.Name);
-        //    }
-        //    Name = new List<SelectList>(await )
-        //}
-
 
         public void OnGet(string cartid) //Skickar c# kod
         {

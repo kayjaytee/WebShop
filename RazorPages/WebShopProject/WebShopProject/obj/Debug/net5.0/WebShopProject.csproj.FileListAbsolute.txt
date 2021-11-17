@@ -86,3 +86,4 @@ C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopPr
 C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.pdb
 C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.genruntimeconfig.cache
 C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.csproj.CopyComplete
+C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\Pages\Admin.cshtml.g.cs
