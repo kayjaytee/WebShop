@@ -113,7 +113,7 @@ namespace WebShopProject.Data
                 {
                     ID = "p06",
                     Name = "Blyfot",
-                    Image = Path.GetFileName(""),
+                    Image = Path.GetFileName("Blyfot.jpg"),
                     Description = "En passande brygd för någon som känner sig busig! Den som får i sig denna brygd kommer göra ena foten 20 kilo tyngre än den andra.",
                     Cost = 500,
                     Ingredients = "Stortån från ett grinigt troll, hårväxt från en skallig dvärg prästinnas fötter",
@@ -128,7 +128,7 @@ namespace WebShopProject.Data
                     Description = "Har dvärgarna i energiverket glömt sätta igång gasbelysningen nu igen!? Köp då en Nattöga, så behöver du inte oroa dig över att krossa näsbenet under en eventuell flygkvastsfärd. ",
                     Cost = 650,
                     Ingredients = "Ögat från en noll-ögd vargspindel, Dödligt odrickbart vatten.",
-                    Warning = "OBS: Överkonsumption av denna dryck kan leda till Vindögdhet. Ena ögat kommer fara runt som två frihetsberövade mördarstorkar. Ytterst irriterande för den som försöker tala med den drabbade."
+                    Warning = "OBS: Överkonsumption av denna dryck kan leda till Vindögdhet. Ögonen kommer fara runt som två frihetsberövade mördarstorkar vilket kan vara ytterst irriterande för den som försöker tala med den drabbade."
                 },
 
                 new PotionModel()
