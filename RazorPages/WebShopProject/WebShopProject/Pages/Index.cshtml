@@ -29,7 +29,9 @@
 
             <tr align="center">
                 <td>@item.ID</td>
-                <td>@item.Name</td>
+                <td>
+                <a asp-page="Details" >@item.Name </a>
+                    </td>
                 <td><img src="~/images/@item.Image" width="250" height="250" /></td>
                 <td>
                 @item.Cost
@@ -38,7 +40,7 @@
                 <td>
                     <div class="ui inverted segment">
                         <button class="ui green button" asp-page="index" asp-route-cartid="@item.ID">Köp</button> </div>
-                        <a asp-page="index" asp-route-cartid="@item.ID">Köp</a>
+                        <a asp-page="Shop" asp-route-cartid="@item.ID">Köp</a>
                         </td>
             </tr>
         }
