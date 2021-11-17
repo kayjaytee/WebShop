@@ -20,7 +20,7 @@ namespace WebShopProject.Data
         {
             if (Products == null || !Products.Any())
             {
-                Products = new List<ProductModel>() //I detta kodstycke kan ni lägga till nya föremål
+                Products = new List<ProductModel>()
             {
                 #region Furniture
                 new FurnitureModel()

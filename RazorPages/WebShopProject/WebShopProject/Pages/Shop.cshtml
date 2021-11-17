@@ -39,7 +39,7 @@
                 </td>
                 <td>
                     <div class="ui inverted segment">
-                        <button class="btn btn-success" asp-page="index" asp-route-cartid="@item.ID">Köp</button>
+                        <button class="btn btn-success" asp-page="Shop" asp-route-cartid="@item.ID">Köp</button>
                     </div>
                     <a asp-page="Shop" asp-route-cartid="@item.ID">Köp</a>
                 </td>
@@ -60,10 +60,15 @@
         @foreach (var item in Model.ShoppingCart)
         {
 
-            <tr align="center">
-                <td>ID</td>
-                <td>@item.ID</td>
-            </tr>
+    <tr align="center">
+        <td>ID</td>
+        <td>@item.ID</td>
+        <td>@item.ID</td>
+        <td>@item.ID</td>
+        <td>@item.ID</td>
+        <td>@item.ID</td>
+        <td>@item.ID</td>
+    </tr>
         }
 
     </table>
