@@ -24,9 +24,6 @@ namespace WebShopProject.Pages.Shared
 
         public void OnGet(string cartid) //Skickar c# kod
         {
-           
-           
-
             Products = ProductManager.GetProducts(); //Hämtar listan, sen returnerar
             ShoppingCart = CartManager.GetShoppingCart();
             if (cartid != null)
