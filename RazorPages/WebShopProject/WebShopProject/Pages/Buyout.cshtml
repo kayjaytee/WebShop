@@ -1,4 +1,29 @@
 ﻿@page
 @model WebShopProject.Pages.Shared.BuyoutModel
 @{
+    decimal totalSum = 0;
 }
+
+<body>
+
+    <h3>Shopping Cart</h3>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+        </tr>
+        @foreach (var item in Model.ShoppingCart)
+        {
+
+            <tr align="center">
+                <td>ID</td>
+                <td>@item.ID</td>
+            </tr>
+            @totalSum += item.Cost;
+        }
+      
+        <p>Totala Kostnad: @totalSum  </p>
+
+    </table>
+
+</body>
+</html>
