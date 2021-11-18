@@ -87,4 +87,9 @@ C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopPr
 C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.genruntimeconfig.cache
 C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\WebShopProject.csproj.CopyComplete
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\Pages\Admin.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\K-J\Documents\GitHub\WebShop\WebShop\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\Pages\Buyout.cshtml.g.cs
+=======
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\Pages\Admin.cshtml.g.cs
+C:\Users\olive\OneDrive\Dokument\GitHub\webbshop2\webbshop2\RazorPages\WebShopProject\WebShopProject\obj\Debug\net5.0\Razor\Pages\Buyout.cshtml.g.cs
+>>>>>>> 126586caf7141d73917ab4a099e467eff7fd3cf1
