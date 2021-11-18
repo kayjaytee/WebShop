@@ -8,8 +8,10 @@
     <tr>
         <th>ID</th>
         <th>Namn</th>
+        <th>Beskrivning</th>
         <th>Bild</th>
         <th>Pris</th>
+        <th>Varningstext</th>
         <th>Köp</th>
     </tr>
     @foreach (var item in Model.Products)
@@ -27,7 +29,7 @@
     </td>
     <td>
         <div class="ui inverted segment">
-            <button class="ui green button" asp-page="index" asp-route-cartid="@item.ID">Köp</button>
+            <!--<button class="ui green button" asp-page="index" asp-route-cartid="@item.ID">Köp</button>--->
         </div>
         <a asp-page="Shop" asp-route-cartid="@item.ID">Köp</a>
     </td>

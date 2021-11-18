@@ -36,7 +36,7 @@ namespace WebShopProject.Pages
             ShoppingCart = cartManager.GetShoppingCart();
             if (cartid != null)
             {
-               var product = Products.Where(x => x.ID == cartid).FirstOrDefault();
+                var product = Products.Where(x => x.ID == cartid).LastOrDefault();
                 cartManager.AddToShoppingCart(product);
             }
         }
