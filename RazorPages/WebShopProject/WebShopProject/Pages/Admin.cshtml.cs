@@ -28,8 +28,8 @@ namespace WebShopProject.Pages
 
         public void OnPost()
         {
-            ProductManager productManager = new ProductManager();
-            productManager.GenerateNewProduct(ID, Name, Image, Description, Cost, Warning);
+           
+            ProductManager.GenerateNewProduct(ID, Name, Image, Description, Cost, Warning);
             Console.WriteLine("Return successful");
         }
     }

@@ -5,12 +5,12 @@ using WebShopProject.Models;
 
 namespace WebShopProject.Data
 {
-    public class ProductManager
+    public static class ProductManager
     {
 
-        private List<ProductModel> Products;
+        public static List<ProductModel> Products;
 
-        public List<ProductModel> GetProducts()
+        public static List<ProductModel> GetProducts()
         {
             if (Products == null || !Products.Any())
             {
@@ -219,31 +219,28 @@ namespace WebShopProject.Data
             return Products;
         }
 
-        public List<ProductModel> FindAll()
+        public static List<ProductModel> FindAll()
         {
             return Products;
         }
 
-        public ProductModel FindID(string id)
+        public static ProductModel FindID(string id)
         {
             return Products.Where(product => product.ID == id).FirstOrDefault(); //kopplat till ovanstående PROBLEM: Returnerar null
         }
 
-        public List<ProductModel> GenerateNewProduct(string id, string name, string image, string description, decimal cost, string warning)
+        public static void GenerateNewProduct(string id, string name, string image, string description, decimal cost, string warning)
         {
-            ProductModel product = Products.Where(product => product.ID == id).FirstOrDefault();
+            ProductModel product = new ProductModel();
 
+            product.ID = id;
+            product.Name = name;
+            product.Image = image;
+            product.Description = description;
+            product.Cost = cost;
+            product.Warning = warning;
 
-            int index = Products.FindIndex(product => product.ID == id);
-
-            Products[index].ID = id;
-            Products[index].Name = name;
-            Products[index].Image = image;
-            Products[index].Description = description;
-            Products[index].Cost = cost;
-            Products[index].Warning = warning;
-
-            return Products;
+           Products.Add(product);
 
 
         }

@@ -3,16 +3,16 @@ using WebShopProject.Models;
 
 namespace WebShopProject.Data
 {
-    public class CartManager
+    public static class CartManager
     {
-        public List<ProductModel> ShoppingCart { get; set; } = new List<ProductModel>();
+        public static List<ProductModel> ShoppingCart { get; set; } = new List<ProductModel>();
 
-        public List<ProductModel> GetShoppingCart()
+        public static List<ProductModel> GetShoppingCart()
         {
             return ShoppingCart;
         }
 
-        public List<ProductModel> AddToShoppingCart(ProductModel shoppingcart)
+        public static List<ProductModel> AddToShoppingCart(ProductModel shoppingcart)
         {
             ShoppingCart.Add(shoppingcart);
             return ShoppingCart;

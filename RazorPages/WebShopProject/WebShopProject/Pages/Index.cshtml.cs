@@ -29,24 +29,21 @@ namespace WebShopProject.Pages
 
         public void OnGet(string cartid) //Skickar c# kod
         {
-            ProductManager productManager = new ProductManager();
-            CartManager cartManager = new CartManager();
 
-            Products = productManager.GetProducts(); //Hämtar listan, sen returnerar
-            ShoppingCart = cartManager.GetShoppingCart();
+            Products = ProductManager.GetProducts(); //Hämtar listan, sen returnerar
+            ShoppingCart = CartManager.GetShoppingCart();
             if (cartid != null)
             {
                 var product = Products.Where(x => x.ID == cartid).LastOrDefault();
-                cartManager.AddToShoppingCart(product);
+                CartManager.AddToShoppingCart(product);
             }
         }
 
         public void OnPost() //Returnerar kod
         {
-            ProductManager productManager = new ProductManager();
-            Products = productManager.FindAll(); //returnerar bara
+            Products = ProductManager.FindAll(); //returnerar bara
 
-            Console.WriteLine("Returning List:" + productManager);
+            Console.WriteLine("Returning List:");
             foreach(var item in ShoppingCart)
             {
                 Console.WriteLine(item.ID);

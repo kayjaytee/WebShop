@@ -27,9 +27,9 @@ namespace WebShopProject.Pages
         [BindProperty] public string Ingredients { get; set; }
         public void OnGet(string productid) //Skickar c# kod
         {
-            ProductManager productManager = new ProductManager();
+            
 
-            Products = productManager.GetProducts(); //Hämtar listan, sen returnerar
+            Products = ProductManager.GetProducts(); //Hämtar listan, sen returnerar
             if (productid != null)
             {
                 Products = Products.Where(x => x.ID == productid);
@@ -39,10 +39,10 @@ namespace WebShopProject.Pages
 
         public void OnPost() //Returnerar kod
         {
-            ProductManager productManager = new ProductManager();
-            Products = productManager.FindAll(); //returnerar bara
+            
+            Products = ProductManager.FindAll(); //returnerar bara
 
-            Console.WriteLine("Returning List:" + productManager);
+            Console.WriteLine("Returning List:");
             foreach (var item in ShoppingCart)
             {
                 Console.WriteLine(item.ID);
