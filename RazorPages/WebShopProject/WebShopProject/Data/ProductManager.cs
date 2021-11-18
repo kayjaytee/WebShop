@@ -10,18 +10,12 @@ namespace WebShopProject.Data
 
         private List<ProductModel> Products;
 
-        //jag har lagt till productmodels med alla kategorier, behövs bara förtydligande av olika föremål och det går att lägga
-        //till om man så önskar. Jag la de ny-genererade produkterna i #regioner bara för att förtydliga ordningen
-        //Nedanför har jag försökt skapa metoder för att kunna söka på olika prylar, men behöver arbeta lite mer på det (och nu är jag trött)
-
-        //Metoderna ska kunna hänvisas till pages senare.
-
         public List<ProductModel> GetProducts()
         {
             if (Products == null || !Products.Any())
             {
                 Products = new List<ProductModel>()
-            {
+                {
                 #region Furniture
                 new FurnitureModel()
                 {
@@ -94,9 +88,9 @@ namespace WebShopProject.Data
 
                 new FurnitureModel()
                 {
-                    ID = "f05",
+                    ID = "f16",
                     Name = "Magiskt Klädskåp",
-                    Image = Path.GetFileName(""),
+                    Image = Path.GetFileName("Magisktklädskåp.jpg"),
                     Description = "Är du trött på alla timmar du lägger på fläckiga tröjor och få bort katthår från strumpor? Denna revolutionerande produkt är mycket populär bland trollkarlar som ska ut en fredagkväll. Stig in i det stora skåpet, liten som stor och kliv ut med rena kläder från topp till tå! ",
 
                     Cost = 7500,
@@ -134,7 +128,7 @@ namespace WebShopProject.Data
                 {
                     ID = "p08",
                     Name = "Jesus Karlssons' Vattenvandrare",
-                    Image = Path.GetFileName("Nattöga"),      //återkommer med bild
+                    Image = Path.GetFileName("jesusvattenvandring.jfif"),      //återkommer med bild
                     Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark och utan att förstöra skosulan!.",
                     Cost = 150,
                     Ingredients = "Hårstrå från en långhårig helgonsgroda, malda tånaglar från ett hårigt troll. ",
@@ -145,7 +139,7 @@ namespace WebShopProject.Data
                 {
                     ID = "p09",
                     Name = "Sune Surstrumpas' Få-Hår-Tillbaka",
-                    Image = Path.GetFileName(""),
+                    Image = Path.GetFileName("fåhårtillbaka.jfif"),
                     Description = "Jobbigt att inte kunna väva skägget som en riktig dvärg? Trött på tonårsfjun? Eller en blänkande hjässa? Två droppar av denna dryck på tungan och du får all hårväxt du kan drömma om!",
                     Cost = 99,
                     Ingredients = "Tunga från en rosa tiger, saliv från en sömnig dvärg, finhackade råttöron. ",
@@ -156,7 +150,7 @@ namespace WebShopProject.Data
                 {
                     ID = "p10",
                     Name = "Jättesmartis Elixir",
-                    Image = Path.GetFileName(""),
+                    Image = Path.GetFileName("Jättesmartis.jpg"),
                     Description = "Vill du vara supersmart som dina magikerkompisar som alltid skryter om hur häftiga eldklot de kan kasta från fingertopparna utan större anstränging? Jättesmartis är ett elixir som höjer din intelligenskvot till övermänskliga nivåer, så du kan lista ut (nästan) alla knep i vardagen!",
                     Cost = 10000,
                     Ingredients = "Tandsten från en 400-årig trollkarl, Bobbys' Blåsbubblor, Alviskt Skosnöre  ",
@@ -219,13 +213,10 @@ namespace WebShopProject.Data
                     Warning = "Brukaren kommer bli extremt vresig och rättretlig, minsta lilla ord kommer framstå som en kränkning och brukaren kommer med stor sannolikhet hamna i en knytnävesbatalj inom kommande timmarna."
                 },
                 #endregion Tobacco
-            };
+                };
 
             }
             return Products;
-
-
-
         }
 
         public List<ProductModel> FindAll()
