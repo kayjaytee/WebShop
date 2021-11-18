@@ -44,10 +44,14 @@ namespace WebShopProject.Pages
             Products = ProductManager.FindAll(); //returnerar bara
 
             Console.WriteLine("Returning List:");
-            foreach(var item in ShoppingCart)
+            foreach (var item in ShoppingCart)
             {
                 Console.WriteLine(item.ID);
             }
+
+                
+
+
 
 
         }
