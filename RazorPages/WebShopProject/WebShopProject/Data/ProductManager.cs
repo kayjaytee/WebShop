@@ -154,7 +154,7 @@ namespace WebShopProject.Data
                     Description = "Vill du vara supersmart som dina magikerkompisar som alltid skryter om hur häftiga eldklot de kan kasta från fingertopparna utan större anstränging? Jättesmartis är ett elixir som höjer din intelligenskvot till övermänskliga nivåer, så du kan lista ut (nästan) alla knep i vardagen!",
                     Cost = 10000,
                     Ingredients = "Tandsten från en 400-årig trollkarl, Bobbys' Blåsbubblor, Alviskt Skosnöre  ",
-                    Warning = "Bieffekt: Överkonsumption kan leda till Storkhalssyndrom och den stackars brukaren kommer ha en tre gånger så lång hals som normalt, något som dock lämpar sig utomordentlgit för spanning upp genom gatubrunnar. "
+                    Warning = "Bieffekt: Överkonsumption kan leda till Storkhalssyndrom och den stackars brukaren kommer ha en tre gånger så lång hals som normalt, något som dock lämpar sig utomordentligt för spanning upp genom gatubrunnar. "
                 },
                 #endregion Potion
                 #region Tobacco

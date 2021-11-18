@@ -15,7 +15,6 @@ namespace WebShopProject.Pages.Shared
 
         public string SearchString { get; set; }
 
-
         public List<ProductModel> ShoppingCart { get; set; }
 
         [BindProperty] public string ID { get; set; }
