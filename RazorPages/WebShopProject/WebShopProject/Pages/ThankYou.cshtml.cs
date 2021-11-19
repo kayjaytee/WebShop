@@ -11,6 +11,10 @@ namespace WebShopProject.Pages
     {
         public void OnGet()
         {
+       
+        
+        
+        
         }
     }
 }
