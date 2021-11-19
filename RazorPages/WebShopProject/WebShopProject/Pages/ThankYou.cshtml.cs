@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebShopProject.Pages
 {
-    public class DeliveryModel : PageModel
+    public class ThankYouModel : PageModel
     {
         public void OnGet()
         {
