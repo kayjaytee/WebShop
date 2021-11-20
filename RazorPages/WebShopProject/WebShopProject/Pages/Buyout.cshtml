@@ -14,16 +14,18 @@
         @foreach (var item in Model.ShoppingCart)
         {
 
-    <tr align="center">
-        <td>ID</td>
-        <td>@item.ID</td>
-        <td>@item.Name</td>
-        <td><img src="~/images/@item.Image" width="250" height="250" /></td>
-    </tr>
+            <tr align="center">
+                <td>ID</td>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td><img src="~/images/@item.Image" width="250" height="250" /></td>
+            </tr>
             totalSum += item.Cost;
-}
+        }
     </table>
-        <h5>Totala Kostnad: @totalSum  </h5>
+    <h5>Totala Kostnad: @totalSum  </h5>
+
+    <a asp-page="ThankYou">Bekräfta Köp </a>
 
 
     <!--- Ifyllnad av Information, namn, adress osv. -->

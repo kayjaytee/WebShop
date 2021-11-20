@@ -42,11 +42,15 @@ namespace WebShopProject.Pages
         public void OnPost() //Returnerar kod
         {
             Products = ProductManager.FindAll(); //returnerar bara
-
-            Console.WriteLine("Returning List:");
             foreach (var item in ShoppingCart)
             {
                 Console.WriteLine(item.ID);
+            }
+
+            if (SearchString != null)
+            {
+                string search = SearchString.ToLower();
+                Products = (List<ProductModel>)Products.Where(s => s.Name.ToLower().Contains(search));
             }
 
                 

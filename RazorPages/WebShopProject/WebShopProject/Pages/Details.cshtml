@@ -3,6 +3,7 @@
 @{
 }
 
+
 <h3></h3>
 <table border="1">
     <tr>
@@ -17,25 +18,23 @@
     @foreach (var item in Model.Products)
     {
 
-<tr align="center">
+        <tr align="center">
 
-    <td>@item.ID</td>
-    <td>@item.Name</td>
-    <td>@item.Description</td>
-    <td><img src="~/images/@item.Image" width="250" height="250" /></td>
-    <td>
-        @item.Cost
-        <img src="~/images/Silver_Coin.png" />
-    <td>@item.Warning</td>
-    <td>
-        <div class="ui inverted segment">
-            <!--<button class="ui green button" asp-page="index" asp-route-cartid="@item.ID">Köp</button>--->
-        </div>
-        <a asp-page="Shop" asp-route-cartid="@item.ID">Köp</a>
-    </td>
-</tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td><img src="~/images/@item.Image" width="250" height="250" /></td>
+            <td>
+                @item.Cost
+                <img src="~/images/Silver_Coin.png" />
+            <td>@item.Warning</td>
+            <td>
+                <div class="ui inverted segment">
+                    <!--<button class="ui green button" asp-page="index" asp-route-cartid="@item.ID">Köp</button>--->
+                </div>
+                <a asp-page="Shop" asp-route-cartid="@item.ID">Köp</a>
+            </td>
+        </tr>
     }
 
-
-
-
+    </table>

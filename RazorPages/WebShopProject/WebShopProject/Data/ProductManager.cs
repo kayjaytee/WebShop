@@ -224,11 +224,6 @@ namespace WebShopProject.Data
             return Products;
         }
 
-        public static ProductModel FindID(string id)
-        {
-            return Products.Where(product => product.ID == id).FirstOrDefault(); //kopplat till ovanstående PROBLEM: Returnerar null
-        }
-
         public static void GenerateNewProduct(string id, string name, string image, string description, decimal cost, string warning)
         {
             ProductModel product = new ProductModel();
