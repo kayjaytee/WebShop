@@ -30,9 +30,11 @@
         {
 
             <tr align="center">
-                <td>@item.ID</td>
                 <td>
-                    <a asp-page="Details" asp-route-productid="@item.ID">@item.Name </a>
+                <p style="color:green">@item.ID<p/>
+                </td>
+                <td>
+                    <a asp-page="Details" asp-route-productid="@item.ID"><strong>@item.Name</strong> </a>
                 </td>
                 <td><img src="~/images/@item.Image" width="250" height="250" /></td>
                 <td>
