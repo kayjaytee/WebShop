@@ -18,8 +18,8 @@ namespace WebShopProject.Data
             return ShoppingCart;
         }
 
-        public static List<ProductModel> ClearShoppingCart() //Försökte implantera en kod för att rensa listan när man slutfört ett köp
-        {                                                    //Tyvärr rann tiden ut för att göra den funktionell, men vi gjorde ett försök.
+        public static List<ProductModel> ClearShoppingCart() //Körs automatiskt på "ThankYou"
+        {                                                    
 
             ShoppingCart.Clear();
 
