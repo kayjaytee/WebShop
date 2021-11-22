@@ -10,71 +10,56 @@
     <table border="1">
         <tr>
             <th>ID</th>
+            <th>Namn</th>
+            <th>Bild</th>
+            <th>Kostnad</th>
         </tr>
         @foreach (var item in Model.ShoppingCart)
         {
 
             <tr align="center">
-                <td>ID</td>
-                <td>@item.ID</td>
-                <td>@item.Name</td>
+                <td>
+                    <p style="color:green">@item.ID<p />
+                </td>
+                <td>
+                    <strong>@item.Name</strong>
+                </td>
                 <td><img src="~/images/@item.Image" width="250" height="250" /></td>
+                <td>@item.Cost <img src="~/images/Silver_Coin.png" /></td>
+
             </tr>
             totalSum += item.Cost;
         }
     </table>
-    <h5>Totala Kostnad: @totalSum  </h5>
+    <h5>Totala Kostnad: @totalSum <img src="~/images/Silver_Coin.png" />  </h5>
 
-    <a asp-page="ThankYou">Bekräfta Köp </a>
 
 
 
 
     <div class="fields">
         <div class="field">
-            <label>First name</label>
+            <label>Förnamn:</label>
             <input type="text" placeholder="First Name">
         </div>
         <div class="field">
-            <label>Last name</label>
+            <label>Efternamn:</label>
             <input type="text" placeholder="Last Name">
         </div>
-    </div>
-    </div>
-    
-    <h4 class="ui dividing header">Shipping Information</h4>
-    <div class="field">
-        <label>Name</label>
-        <div class="two fields">
-            <div class="field">
-                <input type="text" name="shipping[first-name]" placeholder="First Name">
-            </div>
-            <div class="field">
-                <input type="text" name="shipping[last-name]" placeholder="Last Name">
-            </div>
+        <div class="field">
+            <label>Adress: </label>
+            <input type="text" placeholder="Adress">
+        </div>
+        <div class="field">
+            <label>Magiker Licens: </label>
+            <input type="number" placeholder="License">
         </div>
     </div>
-    <div class="field">
-        <label>Billing Address</label>
-        <div class="fields">
-            <div class="twelve wide field">
-                <input type="text" name="shipping[address]" placeholder="Street Address">
-            </div>
-            <div class="four wide field">
-                <input type="text" name="shipping[address-2]" placeholder="Apt #">
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
 
     <!--- En bekräftelseknapp för köp -->
 
+
+    <a asp-page="ThankYou"><button>Bekräfta Köp</button></a> 
 
 </body>
 </html>

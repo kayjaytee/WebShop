@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using WebShopProject.Data;
 
 namespace WebShopProject.Pages
 {
@@ -11,10 +12,7 @@ namespace WebShopProject.Pages
     {
         public void OnGet()
         {
-       
-        
-        
-        
+            CartManager.ClearShoppingCart();
         }
     }
 }

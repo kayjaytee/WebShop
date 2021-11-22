@@ -32,5 +32,10 @@ namespace WebShopProject.Pages.Shared
                 CartManager.AddToShoppingCart(product);
             }
         }
+
+        public void OnPost()
+        {
+      
+        }
     }
 }

@@ -27,7 +27,7 @@ namespace WebShopProject.Data
                     Height = 0.3f,
                     Width = 0.3f,
                     Weight = 0.2f,
-                    Warning = "Varning: Avsaknad av avstängingsläge förekommer."
+                    Warning = "OBS: Avsaknad av avstängingsläge förekommer."
                 },
 
                 new FurnitureModel()
@@ -41,7 +41,7 @@ namespace WebShopProject.Data
                     Height = 0.5f,
                     Width = 0.5f,
                     Weight = 1,
-                    Warning = "Vi ansvarar inte för eventuella för brända tungor under kaffe incidenter."
+                    Warning = "OBS: Vi ansvarar inte för eventuella brända tungor under kaffe incidenter."
                 },
 
                 new FurnitureModel()
@@ -55,7 +55,7 @@ namespace WebShopProject.Data
                     Height = 2.5f,
                     Width = 1.5f,
                     Weight = 300,
-                    Warning = "En explosiv ökning av fart kan bidra till en väldigt flygande åktur - även ur stolen!"
+                    Warning = "OBS: En explosiv ökning av fart kan bidra till en väldigt flygande åktur - även ur stolen!"
                 },
 
                 new FurnitureModel()
@@ -69,7 +69,7 @@ namespace WebShopProject.Data
                     Height = 1.5f,
                     Width = 0.10f,
                     Weight = 2,
-                    Warning = "Tyvärr har en stopp-funktion inte implanterats i kvastens flygläge. Förvänta dig en bruten näsa efter snabb åktur."
+                    Warning = " OBS: Tyvärr har en stopp-funktion inte implanterats i kvastens flygläge. Förvänta dig en bruten näsa efter snabb åktur."
                 },
 
                 new FurnitureModel()
@@ -83,7 +83,7 @@ namespace WebShopProject.Data
                     Height = 6f,
                     Width = 7f,
                     Weight = 10,
-                    Warning = "Varning: Bör inte konsumeras. Brukaren kommer drabbas av en mycket kraft halsbränna som sitter i drygt en veckas tid. Under veckan kommer brukaren andas eld och förbränner, snarare än smälter, all mat som konsumeras. "
+                    Warning = "VARNING: Bör inte konsumeras. Brukaren kommer drabbas av en mycket kraft halsbränna som sitter i drygt en veckas tid. Under veckan kommer brukaren andas eld och förbränner, snarare än smälter, all mat som konsumeras. "
                 },
 
                 new FurnitureModel()
@@ -97,7 +97,7 @@ namespace WebShopProject.Data
                     Height = 10f,
                     Width = 5f,
                     Weight = 45,
-                    Warning = "Se till att du har ordentligt med kläder på innan du kliver in. Skåpet kan ibland missta hud för kläder, därmed lämna en väldigt kosmetisk bieffekt, 'Lakansjukan.'"
+                    Warning = "OBS: Se till att du har ordentligt med kläder på innan du kliver in. Skåpet kan ibland missta hud för kläder, därmed lämna en väldigt kosmetisk bieffekt, 'Lakansjukan.'"
                     + "Precis som ett litet barn som vanligen bär alldeles för stora kläder kommer du bära en alldeles för stor hud, vilken veckar sig som ett evigt sidenlakan som trolltrampats.'"
                 },
                 #endregion Furniture
@@ -121,7 +121,7 @@ namespace WebShopProject.Data
                     Description = "Har dvärgarna i energiverket glömt sätta igång gasbelysningen nu igen!? Köp då en Nattöga, så behöver du inte oroa dig över att krossa näsbenet under en eventuell flygkvastsfärd. ",
                     Cost = 650,
                     Ingredients = "Ögat från en noll-ögd vargspindel, Dödligt odrickbart vatten.",
-                    Warning = "OBS: Överkonsumption av denna dryck kan leda till Vindögdhet. Ögonen kommer fara runt som två frihetsberövade mördarstorkar vilket kan vara ytterst irriterande för den som försöker tala med den drabbade."
+                    Warning = "BIEFFEKTER: Överkonsumption av denna dryck kan leda till Vindögdhet. Ögonen kommer fara runt som två frihetsberövade mördarstorkar vilket kan vara ytterst irriterande för den som försöker tala med den drabbade."
                 },
 
                 new PotionModel()
@@ -132,7 +132,7 @@ namespace WebShopProject.Data
                     Description = "Detta elixir gör det omöjliga möjligt. Ett förtrollat elixir som gör att du kan vandra över vatten som det vore mark och utan att förstöra skosulan!.",
                     Cost = 150,
                     Ingredients = "Hårstrå från en långhårig helgonsgroda, malda tånaglar från ett hårigt troll. ",
-                    Warning = "Vid fall eller förlust av balans, kommer brukaren plaska i vattnet som vanligt."
+                    Warning = "OBS: Vid fall eller förlust av balans, kommer brukaren plaska i vattnet som vanligt."
                 },
 
                 new PotionModel()
@@ -143,7 +143,7 @@ namespace WebShopProject.Data
                     Description = "Jobbigt att inte kunna väva skägget som en riktig dvärg? Trött på tonårsfjun? Eller en blänkande hjässa? Två droppar av denna dryck på tungan och du får all hårväxt du kan drömma om!",
                     Cost = 99,
                     Ingredients = "Tunga från en rosa tiger, saliv från en sömnig dvärg, finhackade råttöron. ",
-                    Warning = "OBS: Överkonsumption kommer leda till mer hår än kanske önskvärt. Alla ytor på kroppen kommer täckas tjockt, stripigt hår, ungefär som på en liten vildhund med begynnande skabb."
+                    Warning = "BIEFFEKTER: Överkonsumption kommer leda till mer hår än kanske önskvärt. Alla ytor på kroppen kommer täckas tjockt, stripigt hår, ungefär som på en liten vildhund med begynnande skabb."
                 },
 
                 new PotionModel()
@@ -154,7 +154,7 @@ namespace WebShopProject.Data
                     Description = "Vill du vara supersmart som dina magikerkompisar som alltid skryter om hur häftiga eldklot de kan kasta från fingertopparna utan större anstränging? Jättesmartis är ett elixir som höjer din intelligenskvot till övermänskliga nivåer, så du kan lista ut (nästan) alla knep i vardagen!",
                     Cost = 10000,
                     Ingredients = "Tandsten från en 400-årig trollkarl, Bobbys' Blåsbubblor, Alviskt Skosnöre  ",
-                    Warning = "Bieffekt: Överkonsumption kan leda till Storkhalssyndrom och den stackars brukaren kommer ha en tre gånger så lång hals som normalt, något som dock lämpar sig utomordentligt för spanning upp genom gatubrunnar. "
+                    Warning = "BIEFFEKTER: Överkonsumption kan leda till Storkhalssyndrom och den stackars brukaren kommer ha en tre gånger så lång hals som normalt, något som dock lämpar sig utomordentligt för spanning upp genom gatubrunnar. "
                 },
                 #endregion Potion
                 #region Tobacco
@@ -166,7 +166,7 @@ namespace WebShopProject.Data
                     Description = "En stor exportsuccé utvecklad av dvärgarna i fiskebranchen - erbjuder en härlig smak av saltvatten, skelögd fulströmming och vit fethaj.",
                     Cost = 40,
                     Ingredients = "Bergssvampstobak, vatten, arom samt rökarom, havssalt, malen skelögd fulströmming, torkad vit fethaj ",
-                    Warning = "Denna tobaken kan definitivt skada din hälsa och är beroendeframkallande, men riktigt gött att tugga"
+                    Warning = "Denna tobaken kan definitivt skada din hälsa och är beroendeframkallande, men riktigt gött att tugga!"
                 },
 
                 new TobaccoModel()
@@ -188,7 +188,7 @@ namespace WebShopProject.Data
                     Description = "En ceremoniell tuggtobak som bryts ner mellan käkarna på de stubbfyllda dvärgarna under heliga minnesstunder för gamla surmulna förfäder.",
                     Cost = 80,
                     Ingredients = "Bergssvampstobak, vatten, arom samt rökarom, aska från en kortväxt präst, torkat ölpulver, torkat kött från en grottbjörn",
-                    Warning = "Denna tobaken kan definitivt skada din hälsa och är beroendeframkallande, men värsta av allt få dvärgiska körsånger på tankarna."
+                    Warning = "Denna tobaken kan definitivt skada din hälsa och är beroendeframkallande, men värsta av allt är att du kommer få höra dvärgiska körsånger på i huvudet."
                 },
 
                 new TobaccoModel()

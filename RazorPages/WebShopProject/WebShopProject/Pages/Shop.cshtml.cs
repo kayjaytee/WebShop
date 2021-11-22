@@ -11,7 +11,7 @@ namespace WebShopProject.Pages.Shared
 {
     public class ShopModel : PageModel
     {
-        public List<ProductModel> Products { get; set; }
+        public IEnumerable<ProductModel> Products { get; set; } //Initierar Listan som IEnumerable för att göra den kompatibel med SearchString
 
         [BindProperty] public string SearchString { get; set; }
 
@@ -36,18 +36,12 @@ namespace WebShopProject.Pages.Shared
         public void OnPost() //Returnerar kod
         {
            
-            Products = ProductManager.FindAll(); //returnerar bara
-
-            Console.WriteLine("Returning List:");
+            Products = ProductManager.GetProducts(); //returnerar bara
 
             if (SearchString != null)
             {
                 string search = SearchString.ToLower();
-                Products = (List<ProductModel>)Products.Where(s => s.Name.ToLower().Contains(search));
-            }
-            foreach (var item in ShoppingCart)
-            {
-                Console.WriteLine(item.ID);
+                Products = Products.Where(x => x.Name.ToLower().Contains(search));
             }
 
 

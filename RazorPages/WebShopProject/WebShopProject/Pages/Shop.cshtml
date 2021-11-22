@@ -6,10 +6,14 @@
 <!DOCTYPE html>
 <html>
 <!---Search Box -->
+
 <h1>@Model.SearchString</h1>
 <form method="post">
     <input type="text" id="q" asp-for="@Model.SearchString" placeholder="Hitta Produkt" />
 </form>
+
+
+
 <!---Search Box -->
 <body>
 
@@ -36,10 +40,8 @@
                     <img src="~/images/Silver_Coin.png" />
                 </td>
                 <td>
-                    <div class="ui inverted segment">
-                        <!---   <button class="btn btn-success" asp-page="Shop" asp-route-cartid="@item.ID">Köp</button> --->
-                    </div>
-                    <a asp-page="Shop" asp-route-cartid="@item.ID">Köp</a>
+     
+                    <a asp-page="Shop" asp-route-cartid="@item.ID"><button>Köp</button></a>
                 </td>
             </tr>
         }
