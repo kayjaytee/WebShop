@@ -28,8 +28,53 @@
     <a asp-page="ThankYou">Bekräfta Köp </a>
 
 
-    <!--- Ifyllnad av Information, namn, adress osv. -->
+
+
+    <div class="fields">
+        <div class="field">
+            <label>First name</label>
+            <input type="text" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last name</label>
+            <input type="text" placeholder="Last Name">
+        </div>
+    </div>
+    </div>
+    
+    <h4 class="ui dividing header">Shipping Information</h4>
+    <div class="field">
+        <label>Name</label>
+        <div class="two fields">
+            <div class="field">
+                <input type="text" name="shipping[first-name]" placeholder="First Name">
+            </div>
+            <div class="field">
+                <input type="text" name="shipping[last-name]" placeholder="Last Name">
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <label>Billing Address</label>
+        <div class="fields">
+            <div class="twelve wide field">
+                <input type="text" name="shipping[address]" placeholder="Street Address">
+            </div>
+            <div class="four wide field">
+                <input type="text" name="shipping[address-2]" placeholder="Apt #">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
     <!--- En bekräftelseknapp för köp -->
+
 
 </body>
 </html>
