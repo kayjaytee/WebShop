@@ -5,11 +5,12 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device.width" />
-    <title>Index</title>
-
-</head>
+<!---Search Box -->
+<h1>@Model.SearchString</h1>
+<form method="post">
+    <input type="text" id="q" asp-for="@Model.SearchString" placeholder="Hitta Produkt" />
+</form>
+<!---Search Box -->
 <body>
 
     <h3>Product List</h3>
@@ -38,8 +39,8 @@
                     <div class="ui inverted segment">
                         <!---   <button class="btn btn-success" asp-page="Shop" asp-route-cartid="@item.ID">Köp</button> --->
                     </div>
-                <a asp-page="Shop" asp-route-cartid="@item.ID">Köp</a>
-</td>
+                    <a asp-page="Shop" asp-route-cartid="@item.ID">Köp</a>
+                </td>
             </tr>
         }
 

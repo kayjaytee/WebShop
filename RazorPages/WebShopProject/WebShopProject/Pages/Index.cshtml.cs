@@ -17,7 +17,6 @@ namespace WebShopProject.Pages
 
         public List<ProductModel> Products { get; set; }
     
-        public string SearchString { get; set; }
 
 
         public List<ProductModel> ShoppingCart { get; set; }
@@ -42,19 +41,6 @@ namespace WebShopProject.Pages
         public void OnPost() //Returnerar kod
         {
             Products = ProductManager.FindAll(); //returnerar bara
-            foreach (var item in ShoppingCart)
-            {
-                Console.WriteLine(item.ID);
-            }
-
-            if (SearchString != null)
-            {
-                string search = SearchString.ToLower();
-                Products = (List<ProductModel>)Products.Where(s => s.Name.ToLower().Contains(search));
-            }
-
-                
-
 
 
 

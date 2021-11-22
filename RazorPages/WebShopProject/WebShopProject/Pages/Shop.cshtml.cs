@@ -13,7 +13,7 @@ namespace WebShopProject.Pages.Shared
     {
         public List<ProductModel> Products { get; set; }
 
-        public string SearchString { get; set; }
+        [BindProperty] public string SearchString { get; set; }
 
         public List<ProductModel> ShoppingCart { get; set; }
 
@@ -39,10 +39,19 @@ namespace WebShopProject.Pages.Shared
             Products = ProductManager.FindAll(); //returnerar bara
 
             Console.WriteLine("Returning List:");
+
+            if (SearchString != null)
+            {
+                string search = SearchString.ToLower();
+                Products = (List<ProductModel>)Products.Where(s => s.Name.ToLower().Contains(search));
+            }
             foreach (var item in ShoppingCart)
             {
                 Console.WriteLine(item.ID);
             }
+
+
+
 
 
         }
